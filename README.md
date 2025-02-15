@@ -1,13 +1,13 @@
 # CZSDoge Core [CZSDOGE, Ȼ]
 
-![CZSDoge](https://CZSDoge.com/img/logos/CZSDoge/logo/czsdoge_coin256.png)
+![CZSDoge](https://CZSDoge.org/img/logos/CZSDoge/logo/czsdoge_coin256.png)
 
 [![Build Status](https://travis-ci.com/CZSDoge/CZSDoge.svg?branch=master)](https://travis-ci.com/CZSDoge/CZSDoge)
 
 CZSDoge is a cryptocurrency like Bitcoin, although it does not use SHA256 as
 its proof of work (POW). Taking development cues from Tenebrix and Litecoin,
 CZSDoge currently employs a simplified variant of scrypt.
-- **Website:** [CZSDoge.com](https://CZSDoge.com)
+- **Website:** [CZSDoge.org](https://CZSDoge.org)
 
 ## License – Much license ⚖️
 CZSDoge Core is released under the terms of the MIT license. See

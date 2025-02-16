@@ -40,7 +40,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>DingocoinGUI</name>
+    <name>CZSDogeGUI</name>
     <message>
         <source>&amp;Such Send</source>
         <translation>&amp;ناردن</translation>
@@ -374,7 +374,7 @@
     </message>
     </context>
 <context>
-    <name>dingocoin-core</name>
+    <name>czsdoge-core</name>
     <message>
         <source>Options:</source>
         <translation>هەڵبژاردنەکان:</translation>

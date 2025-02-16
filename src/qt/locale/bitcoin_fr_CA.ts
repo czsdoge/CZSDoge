@@ -36,7 +36,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>DingocoinGUI</name>
+    <name>CZSDogeGUI</name>
     </context>
 <context>
     <name>CoinControlDialog</name>
@@ -154,6 +154,6 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>dingocoin-core</name>
+    <name>czsdoge-core</name>
     </context>
 </TS>

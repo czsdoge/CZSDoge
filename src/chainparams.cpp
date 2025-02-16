@@ -86,7 +86,7 @@ public:
         consensus.nMajorityEnforceBlockUpgrade = 1500;
         consensus.nMajorityRejectBlockOutdated = 1900;
         consensus.nMajorityWindow = 2000;
-        // BIP34 is never enforced in Dingocoin v2 blocks, so we enforce from v3
+        // BIP34 is never enforced in CZSDoge v2 blocks, so we enforce from v3
         consensus.BIP34Height = 129999;
         consensus.BIP34Hash = uint256S("0x801f73ac28d2c05e33868a6e751e21f967a0ba88b03395696b97194e04f8e39b");
         consensus.BIP65Height = 197999;
@@ -107,7 +107,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
 
         // Deployment of BIP68, BIP112, and BIP113.
-        // XXX: BIP heights and hashes all need to be updated to Dingocoin values
+        // XXX: BIP heights and hashes all need to be updated to CZSDoge values
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1651494979; // May 5th, 2022
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 0; // Disabled
@@ -169,11 +169,9 @@ public:
         nPruneAfterHeight = 100000;
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("vps.dingocoin.com", "dnsseed.dingocoin.com", true));
-        vSeeds.push_back(CDNSSeedData("australiacash.org", "seed.australiacash.org", true));
-        vSeeds.push_back(CDNSSeedData("seed1.dingocoin.com", "seed1.dingocoin.com", true));
-        vSeeds.push_back(CDNSSeedData("seed2.dingocoin.com", "seed2.dingocoin.com", true));
-        vSeeds.push_back(CDNSSeedData("seed3.dingocoin.com", "seed3.dingocoin.com", true));
+        vSeeds.push_back(CDNSSeedData("seed1.czsdoge.org", "seed1.czsdoge.org", true));
+        vSeeds.push_back(CDNSSeedData("seed2.czsdoge.org", "seed2.czsdoge.org", true));
+        vSeeds.push_back(CDNSSeedData("seed3.czsdoge.org", "seed3.czsdoge.org", true));
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,30);
@@ -182,7 +180,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0xfa)(0xca)(0xfd).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0xfa)(0xc3)(0x98).convert_to_container<std::vector<unsigned char> >();
 
-        //TODO: fix this for dingocoin -- plddr
+        //TODO: fix this for czsdoge -- plddr
         //vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
         vFixedSeeds.clear();
 
@@ -194,7 +192,7 @@ public:
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
             (       0, uint256S("0x1a91e3dace36e2be3bf030a65679fe821aa1d6ef92e7c9902eb318182c355691")) // Dogecoins original genesis block for shits and giggles
-            (       1, uint256S("0x594a42d8fe16382085dc982135df72cf8fcea12d34e6efd566e2f9e442e2136f")) // First block mined within the Dingocoin Blockchain 03/04/2021
+            (       1, uint256S("0x594a42d8fe16382085dc982135df72cf8fcea12d34e6efd566e2f9e442e2136f")) // First block mined within the CZSDoge Blockchain 03/04/2021
             (    4999, uint256S("0x2a17ca5b715be5cb5322b5c4e13fa2509744728fde377eeb3dc2eff69fec79e4")) // Final block before Digishield activation
             (    6250, uint256S("0xd2fe4ee046feaa1d175ff7120cd2e3d1ea07088745b5f52bc13df98cf8eb5094"))
             (   37486, uint256S("0x58c8b4c5c07efafaeb602b93ca0a46f4c442871964d43b26b76a281883f9d2e2"))
@@ -250,7 +248,7 @@ public:
         consensus.nMajorityEnforceBlockUpgrade = 1500;
         consensus.nMajorityRejectBlockOutdated = 1900;
         consensus.nMajorityWindow = 2000;
-        // BIP34 is never enforced in Dingocoin v2 blocks, so we enforce from v3
+        // BIP34 is never enforced in CZSDoge v2 blocks, so we enforce from v3
         consensus.BIP34Height = 1;
         consensus.BIP34Hash = uint256S("0x000");
         consensus.BIP65Height = 1;
@@ -271,7 +269,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
 
         // Deployment of BIP68, BIP112, and BIP113.
-        // XXX: BIP heights and hashes all need to be updated to Dingocoin values
+        // XXX: BIP heights and hashes all need to be updated to CZSDoge values
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1651494979; // May 5th, 2022
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 0; // Disabled
@@ -330,7 +328,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.push_back(CDNSSeedData("tn-seed.dingocoin.com", "tn-seed.dingocoin.com", true));
+        vSeeds.push_back(CDNSSeedData("tn-seed.czsdoge.org", "tn-seed.czsdoge.org", true));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,113); // 0x71
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196); // 0xc4
@@ -338,7 +336,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xcf).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
 
-        //TODO: fix this for dingocoin -- plddr
+        //TODO: fix this for czsdoge -- plddr
         //vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
         fMiningRequiresPeers = true;
@@ -420,7 +418,7 @@ public:
         consensus.fAllowLegacyBlocks = true;
         consensus.nHeightEffective = 0;
 
-        // Dingocoin parameters
+        // CZSDoge parameters
         consensus.fSimplifiedRewards = true;
         consensus.nCoinbaseMaturity = 60; // For easier testability in RPC tests
 

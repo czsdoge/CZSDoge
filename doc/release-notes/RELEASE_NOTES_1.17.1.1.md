@@ -1,6 +1,6 @@
-Dingocoin Core version 1.17.1.1 is now available from:
+CZSDoge Core version 1.17.1.1 is now available from:
 
-  <https://github.com/dingocoin/dingocoin/releases/tag/v1.17.1.1/>
+  <https://github.com/czsdoge/czsdoge/releases/tag/v1.17.1.1/>
 
 This is a new major version release, including new rpc calls 'createauxblock' and
 'submitauxblock'. Implement auxpow POW checks to combat the malformed auxpow coinbase
@@ -8,25 +8,25 @@ when there's empty array of inputs causing segmentation fault.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/dingocoin/dingocoin/issues>
+  <https://github.com/czsdoge/czsdoge/issues>
 
 To receive security and update notifications, please watch reddit or Twitter:
 
-  * https://www.reddit.com/r/dingocoin/
-  * @Dingocoin on Twitter for high priority announcements
-  * @dingocoin\_devs on Twitter for updates on development work
+  * https://www.reddit.com/r/czsdoge/
+  * @CZSDoge on Twitter for high priority announcements
+  * @czsdoge\_devs on Twitter for updates on development work
 
 Compatibility
 ==============
 
-Dingocoin Core is extensively tested on Ubuntu Server LTS, Mac OS X and Windows 10.
+CZSDoge Core is extensively tested on Ubuntu Server LTS, Mac OS X and Windows 10.
 
 Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support),
 No attempt is made to prevent installing or running the software on Windows XP, you
 can still do so at your own risk but be aware that there are known instabilities and issues.
 Please do not report issues about Windows XP to the issue tracker.
 
-Dingocoin Core should also work on most other Unix-like systems but is not
+CZSDoge Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 Notable changes from 1.14.*
@@ -45,7 +45,7 @@ Performance Improvements
 Manual Pruning
 --------------
 
-Dingocoin Core introduces pruning the blockchain in 1.14. Pruning
+CZSDoge Core introduces pruning the blockchain in 1.14. Pruning
 the blockchain allows for significant storage space savings as the vast majority of
 the downloaded data can be discarded after processing so very little of it remains
 on the disk.
@@ -119,7 +119,7 @@ the same thing as the GUI icon. The command takes one boolean parameter,
 Out-of-sync Modal Info Layer
 ----------------------------
 
-When Dingocoin Core is out-of-sync on startup, a semi-transparent information
+When CZSDoge Core is out-of-sync on startup, a semi-transparent information
 layer will be shown over top of the normal display. This layer contains
 details about the current sync progress and estimates the amount of time
 remaining to finish syncing. This layer can also be hidden and subsequently

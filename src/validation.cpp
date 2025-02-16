@@ -13,7 +13,7 @@
 #include "consensus/consensus.h"
 #include "consensus/merkle.h"
 #include "consensus/validation.h"
-#include "dingocoin.h"
+#include "czsdoge.h"
 #include "hash.h"
 #include "init.h"
 #include "policy/fees.h"
@@ -51,7 +51,7 @@
 #include <boost/thread.hpp>
 
 #if defined(NDEBUG)
-# error "Dingocoin cannot be compiled without assertions."
+# error "CZSDoge cannot be compiled without assertions."
 #endif
 
 /**
@@ -99,7 +99,7 @@ static void CheckBlockIndex(const Consensus::Params& consensusParams);
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const std::string strMessageMagic = "Dingocoin Signed Message:\n";
+const std::string strMessageMagic = "CZSDoge Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -776,7 +776,7 @@ bool AcceptToMemoryPoolWorker(CTxMemPool& pool, CValidationState& state, const C
         // Continuously rate-limit free (really, very-low-fee) transactions
         // This mitigates 'penny-flooding' -- sending thousands of free transactions just to
         // be annoying or make others' transactions take longer to confirm.
-        if (fLimitFree && nModifiedFees < GetDingocoinMinRelayFee(tx, nSize, !fLimitFree))
+        if (fLimitFree && nModifiedFees < GetCZSDogeMinRelayFee(tx, nSize, !fLimitFree))
         {
             static CCriticalSection csFreeLimiter;
             static double dFreeCount;
@@ -1421,7 +1421,7 @@ bool CheckTxInputs(const CChainParams& params, const CTransaction& tx, CValidati
 
             // If prev is coinbase, check that it's matured
             if (coins->IsCoinBase()) {
-                // Dingocoin: Switch maturity at depth 145,000
+                // CZSDoge: Switch maturity at depth 145,000
                 int nCoinbaseMaturity = params.GetConsensus(coins->nHeight).nCoinbaseMaturity;
                 if (nSpendHeight - coins->nHeight < nCoinbaseMaturity)
                     return state.Invalid(false,
@@ -1715,7 +1715,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("dingocoin-scriptch");
+    RenameThread("czsdoge-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -1837,7 +1837,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     // Now that the whole chain is irreversibly beyond that time it is applied to all blocks except the
     // two in the chain that violate it. This prevents exploiting the issue against nodes during their
     // initial block download.
-    // Dingocoin: BIP30 has been active since inception
+    // CZSDoge: BIP30 has been active since inception
     bool fEnforceBIP30 = true;
 
     // Once BIP34 activated it was not possible to create new duplicate coinbases and thus other than starting
@@ -1860,7 +1860,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     }
 
     // BIP16 didn't become active until Apr 1 2012
-    // Dingocoin: BIP16 has been enabled since inception
+    // CZSDoge: BIP16 has been enabled since inception
     bool fStrictPayToScriptHash = true;
 
     unsigned int flags = fStrictPayToScriptHash ? SCRIPT_VERIFY_P2SH : SCRIPT_VERIFY_NONE;
@@ -1965,7 +1965,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     int64_t nTime3 = GetTimeMicros(); nTimeConnect += nTime3 - nTime2;
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime3 - nTime2), 0.001 * (nTime3 - nTime2) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime3 - nTime2) / (nInputs-1), nTimeConnect * 0.000001);
 
-    CAmount blockReward = nFees + GetDingocoinBlockSubsidy(pindex->nHeight, chainparams.GetConsensus(pindex->nHeight), hashPrevBlock);
+    CAmount blockReward = nFees + GetCZSDogeBlockSubsidy(pindex->nHeight, chainparams.GetConsensus(pindex->nHeight), hashPrevBlock);
     if (block.vtx[0]->GetValueOut() > blockReward)
         return state.DoS(100,
                          error("ConnectBlock(): coinbase pays too much (actual=%d vs limit=%d)",
@@ -2997,7 +2997,7 @@ static bool CheckIndexAgainstCheckpoint(const CBlockIndex* pindexPrev, CValidati
 
 bool IsWitnessEnabled(const CBlockIndex* pindexPrev, const Consensus::Params& params)
 {
-    // Dingocoin: Disable SegWit
+    // CZSDoge: Disable SegWit
     return false;
     // LOCK(cs_main);
     // return (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == THRESHOLD_ACTIVE);
@@ -3071,7 +3071,7 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
                                     __func__),
                          REJECT_INVALID, "late-legacy-block");
 
-    // Dingocoin: Disallow AuxPow blocks before it is activated.
+    // CZSDoge: Disallow AuxPow blocks before it is activated.
     // TODO: Remove this test, as checkpoints will enforce this for us now
     // NOTE: Previously this had its own fAllowAuxPoW flag, but that's always the opposite of fAllowLegacyBlocks
     if (consensusParams.fAllowLegacyBlocks
@@ -3100,7 +3100,7 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
 
     // Reject outdated version blocks when 95% (75% on testnet) of the network has upgraded:
     // check for version 2, 3 and 4 upgrades
-    // Dingocoin: Version 2 enforcement was never used
+    // CZSDoge: Version 2 enforcement was never used
     if((block.GetBaseVersion() < 3 && nHeight >= consensusParams.BIP66Height) ||
        (block.GetBaseVersion() < 4 && nHeight >= consensusParams.BIP65Height))
             return state.Invalid(false, REJECT_OBSOLETE, strprintf("bad-version(0x%08x)", block.GetBaseVersion()),
@@ -3116,7 +3116,7 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, const CB
     const Consensus::Params& consensusParams = chainParams.GetConsensus(nHeight);
 
     // Start enforcing BIP113 (Median Time Past) using versionbits logic.
-    // Dingocoin: We probably want to disable this
+    // CZSDoge: We probably want to disable this
     int nLockTimeFlags = 0;
     if (VersionBitsState(pindexPrev, consensusParams, Consensus::DEPLOYMENT_CSV, versionbitscache) == THRESHOLD_ACTIVE) {
         nLockTimeFlags |= LOCKTIME_MEDIAN_TIME_PAST;

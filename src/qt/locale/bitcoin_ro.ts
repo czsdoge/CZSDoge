@@ -76,7 +76,7 @@
     </message>
 </context>
 <context>
-    <name>DingocoinGUI</name>
+    <name>CZSDogeGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Semnează &amp;mesajul...</translation>
@@ -142,8 +142,8 @@
         <translation>Deschide &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a Dingocoin address</source>
-        <translation>Trimite monedele către o adresă Dingocoin</translation>
+        <source>Send coins to a CZSDoge address</source>
+        <translation>Trimite monedele către o adresă CZSDoge</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Verifică mesajul...</translation>
     </message>
     <message>
-        <source>Dingocoin</source>
-        <translation>Dingocoin</translation>
+        <source>CZSDoge</source>
+        <translation>CZSDoge</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Criptează cheile private care aparțin portofelului tău.</translation>
     </message>
     <message>
-        <source>Sign messages with your Dingocoin addresses to prove you own them</source>
-        <translation>Semnează mesajele cu adresa ta de Dingocoin pentru a face dovada că îți aparțin.</translation>
+        <source>Sign messages with your CZSDoge addresses to prove you own them</source>
+        <translation>Semnează mesajele cu adresa ta de CZSDoge pentru a face dovada că îți aparțin.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dingocoin addresses</source>
-        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Dingocoin specificată.</translation>
+        <source>Verify messages to ensure they were signed with specified CZSDoge addresses</source>
+        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de CZSDoge specificată.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -214,12 +214,12 @@
         <translation>&amp;Ajutor</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dingocoin: URIs)</source>
-        <translation>Cerere plată (generează coduri QR și dingocoin: URIs)</translation>
+        <source>Request payments (generates QR codes and czsdoge: URIs)</source>
+        <translation>Cerere plată (generează coduri QR și czsdoge: URIs)</translation>
     </message>
     <message>
-        <source>Open a dingocoin: URI or payment request</source>
-        <translation>Deschide un dingocoin: URI sau cerere de plată</translation>
+        <source>Open a czsdoge: URI or payment request</source>
+        <translation>Deschide un czsdoge: URI sau cerere de plată</translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -746,10 +746,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>dingocoin-core</name>
+    <name>czsdoge-core</name>
     <message>
-        <source>Dingocoin Core</source>
-        <translation>Dingocoin Core</translation>
+        <source>CZSDoge Core</source>
+        <translation>CZSDoge Core</translation>
     </message>
     <message>
         <source>Information</source>

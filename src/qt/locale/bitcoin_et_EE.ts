@@ -104,7 +104,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>DingocoinGUI</name>
+    <name>CZSDogeGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Võrguga sünkroniseerimine...</translation>
@@ -130,8 +130,8 @@
         <translation>Kõvakettal olevate plokkide reindekseerimine...</translation>
     </message>
     <message>
-        <source>Dingocoin</source>
-        <translation>Dingocoin</translation>
+        <source>CZSDoge</source>
+        <translation>CZSDoge</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -754,14 +754,14 @@
     </message>
     </context>
 <context>
-    <name>dingocoin-core</name>
+    <name>czsdoge-core</name>
     <message>
         <source>Options:</source>
         <translation>Valikud:</translation>
     </message>
     <message>
-        <source>Dingocoin Core</source>
-        <translation>Dingocoin Core</translation>
+        <source>CZSDoge Core</source>
+        <translation>CZSDoge Core</translation>
     </message>
     <message>
         <source>Information</source>

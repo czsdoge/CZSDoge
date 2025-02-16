@@ -28,7 +28,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>DingocoinGUI</name>
+    <name>CZSDogeGUI</name>
     <message>
         <source>&amp;Transactions</source>
         <translation>&amp;Транзакциялар</translation>
@@ -38,8 +38,8 @@
         <translation>Билдирүүнү &amp;текшерүү...</translation>
     </message>
     <message>
-        <source>Dingocoin</source>
-        <translation>Dingocoin</translation>
+        <source>CZSDoge</source>
+        <translation>CZSDoge</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -334,7 +334,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>dingocoin-core</name>
+    <name>czsdoge-core</name>
     <message>
         <source>Information</source>
         <translation>Маалымат</translation>

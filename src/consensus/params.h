@@ -70,7 +70,7 @@ struct Params {
     int64_t nPowTargetTimespan;
     int64_t DifficultyAdjustmentInterval() const { return nPowTargetTimespan / nPowTargetSpacing; }
 
-    /** Dingocoin-specific parameters */
+    /** CZSDoge-specific parameters */
     bool fDigishieldDifficultyCalculation;
     bool fPowAllowDigishieldMinDifficultyBlocks; // Allow minimum difficulty blocks where a retarget would normally occur
     bool fSimplifiedRewards; // Use block height derived rewards rather than previous block hash derived

@@ -1475,7 +1475,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Dingocoin " + FormatFullVersion();
+        std::string strDesc = "CZSDoge " + FormatFullVersion();
 
         try {
             while (true) {

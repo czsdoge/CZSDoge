@@ -1,33 +1,33 @@
-# /etc/conf.d/dingocoind: config file for /etc/init.d/dingocoind
+# /etc/conf.d/czsdoged: config file for /etc/init.d/czsdoged
 
 # Config file location
-#DINGOCOIND_CONFIGFILE="/etc/dingocoin/dingocoin.conf"
+#CZSDOGED_CONFIGFILE="/etc/czsdoge/czsdoge.conf"
 
-# What directory to write pidfile to?  (created and owned by $DINGOCOIND_USER)
-#DINGOCOIND_PIDDIR="/var/run/dingocoind"
+# What directory to write pidfile to?  (created and owned by $CZSDOGED_USER)
+#CZSDOGED_PIDDIR="/var/run/czsdoged"
 
 # What filename to give the pidfile
-#DINGOCOIND_PIDFILE="${DINGOCOIND_PIDDIR}/dingocoind.pid"
+#CZSDOGED_PIDFILE="${CZSDOGED_PIDDIR}/czsdoged.pid"
 
-# Where to write dingocoind data (be mindful that the blockchain is large)
-#DINGOCOIND_DATADIR="/var/lib/dingocoind"
+# Where to write czsdoged data (be mindful that the blockchain is large)
+#CZSDOGED_DATADIR="/var/lib/czsdoged"
 
-# User and group to own dingocoind process
-#DINGOCOIND_USER="dingocoin"
-#DINGOCOIND_GROUP="dingocoin"
+# User and group to own czsdoged process
+#CZSDOGED_USER="czsdoge"
+#CZSDOGED_GROUP="czsdoge"
 
-# Path to dingocoind executable
-#DINGOCOIND_BIN="/usr/bin/dingocoind"
+# Path to czsdoged executable
+#CZSDOGED_BIN="/usr/bin/czsdoged"
 
-# Nice value to run dingocoind under
-#DINGOCOIND_NICE=0
+# Nice value to run czsdoged under
+#CZSDOGED_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)
-DINGOCOIND_OPTS="-disablewallet"
+CZSDOGED_OPTS="-disablewallet"
 
-# The timeout in seconds OpenRC will wait for dingocoind to terminate
+# The timeout in seconds OpenRC will wait for czsdoged to terminate
 # after a SIGTERM has been raised.
 # Note that this will be mapped as argument to start-stop-daemon's
 # '--retry' option, which means you can specify a retry schedule
 # here. For more information see man 8 start-stop-daemon.
-DINGOCOIND_SIGTERM_TIMEOUT=60
+CZSDOGED_SIGTERM_TIMEOUT=60

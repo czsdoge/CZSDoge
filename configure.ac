@@ -8,17 +8,17 @@ define(_CLIENT_VERSION_BUILD, 1)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2024)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Bitcoin Core and Dingocoin Core]])
-AC_INIT([Dingocoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/dingocoin/dingocoin/issues],[dingocoin],[https://dingocoin.com/])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Bitcoin Core and CZSDoge Core]])
+AC_INIT([CZSDoge Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/czsdoge/czsdoge/issues],[czsdoge],[https://czsdoge.org/])
 AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=dingocoind
-BITCOIN_GUI_NAME=dingocoin-qt
-BITCOIN_CLI_NAME=dingocoin-cli
-BITCOIN_TX_NAME=dingocoin-tx
+BITCOIN_DAEMON_NAME=czsdoged
+BITCOIN_GUI_NAME=czsdoge-qt
+BITCOIN_CLI_NAME=czsdoge-cli
+BITCOIN_TX_NAME=czsdoge-tx
 
 AC_CANONICAL_HOST
 
@@ -917,11 +917,11 @@ AC_SUBST(UNIVALUE_LIBS)
 
 BITCOIN_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
-AC_MSG_CHECKING([whether to build dingocoind])
+AC_MSG_CHECKING([whether to build czsdoged])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 
-AC_MSG_CHECKING([whether to build utils (dingocoin-cli dingocoin-tx)])
+AC_MSG_CHECKING([whether to build utils (czsdoge-cli czsdoge-tx)])
 AM_CONDITIONAL([BUILD_BITCOIN_UTILS], [test x$build_bitcoin_utils = xyes])
 AC_MSG_RESULT($build_bitcoin_utils)
 
@@ -1022,7 +1022,7 @@ if test x$bitcoin_enable_qt != xno; then
     AC_MSG_WARN("xgettext is required to update qt translations")
   fi
 
-  AC_MSG_CHECKING([whether to build test_dingocoin-qt])
+  AC_MSG_CHECKING([whether to build test_czsdoge-qt])
   if test x$use_gui_tests$bitcoin_enable_qt_test = xyesyes; then
     AC_MSG_RESULT([yes])
     BUILD_TEST_QT="yes"
@@ -1033,7 +1033,7 @@ fi
 
 AM_CONDITIONAL([ENABLE_ZMQ], [test "x$use_zmq" = "xyes"])
 
-AC_MSG_CHECKING([whether to build test_dingocoin])
+AC_MSG_CHECKING([whether to build test_czsdoge])
 if test x$use_tests = xyes; then
   AC_MSG_RESULT([yes])
   BUILD_TEST="yes"

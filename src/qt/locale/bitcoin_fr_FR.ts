@@ -128,7 +128,7 @@
     </message>
 </context>
 <context>
-    <name>DingocoinGUI</name>
+    <name>CZSDogeGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Signer &amp;message...</translation>
@@ -218,8 +218,8 @@
         <translation>Réindexer les blocs sur le disque...</translation>
     </message>
     <message>
-        <source>Send coins to a Dingocoin address</source>
-        <translation>Envoyer des pièces à une adresse Dingocoin</translation>
+        <source>Send coins to a CZSDoge address</source>
+        <translation>Envoyer des pièces à une adresse CZSDoge</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -242,8 +242,8 @@
         <translation>&amp;Vérification du message</translation>
     </message>
     <message>
-        <source>Dingocoin</source>
-        <translation>Dingocoin</translation>
+        <source>CZSDoge</source>
+        <translation>CZSDoge</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -270,8 +270,8 @@
         <translation>Crypter les clé privées qui appartiennent votre portefeuille</translation>
     </message>
     <message>
-        <source>Sign messages with your Dingocoin addresses to prove you own them</source>
-        <translation>Signer vos messages avec vos adresses Dingocoin pour prouver que vous les détenez</translation>
+        <source>Sign messages with your CZSDoge addresses to prove you own them</source>
+        <translation>Signer vos messages avec vos adresses CZSDoge pour prouver que vous les détenez</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -290,24 +290,24 @@
         <translation>Barre d'outils des onglets</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dingocoin: URIs)</source>
-        <translation>Demander des paiements (générer QR codes et dingocoin: URIs)</translation>
+        <source>Request payments (generates QR codes and czsdoge: URIs)</source>
+        <translation>Demander des paiements (générer QR codes et czsdoge: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
         <translation>Montrer la liste des adresses d'envois utilisées et les étiquettes</translation>
     </message>
     <message>
-        <source>Open a dingocoin: URI or payment request</source>
-        <translation>Ouvrir un dingocoin: URI ou demande de paiement</translation>
+        <source>Open a czsdoge: URI or payment request</source>
+        <translation>Ouvrir un czsdoge: URI ou demande de paiement</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Options de ligne de commande</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Dingocoin network</source>
-        <translation><numerusform>%n connexion active au réseau Dingocoin</numerusform><numerusform>%n connexions actives au réseau Dingocoin</numerusform></translation>
+        <source>%n active connection(s) to CZSDoge network</source>
+        <translation><numerusform>%n connexion active au réseau CZSDoge</numerusform><numerusform>%n connexions actives au réseau CZSDoge</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -684,8 +684,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically open the Dingocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir le port du client Dingocoin automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
+        <source>Automatically open the CZSDoge client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir le port du client CZSDoge automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -844,8 +844,8 @@
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a Dingocoin address (e.g. %1)</source>
-        <translation>Entrer une adresse Dingocoin (e.g. %1)</translation>
+        <source>Enter a CZSDoge address (e.g. %1)</source>
+        <translation>Entrer une adresse CZSDoge (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1636,7 +1636,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>dingocoin-core</name>
+    <name>czsdoge-core</name>
     <message>
         <source>Options:</source>
         <translation>Options :</translation>
@@ -1662,8 +1662,8 @@
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-        <source>Dingocoin Core</source>
-        <translation>Dingocoin Core</translation>
+        <source>CZSDoge Core</source>
+        <translation>CZSDoge Core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

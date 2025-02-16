@@ -194,7 +194,7 @@ public:
         return 3 * minRelayTxFee.GetFee(nSize);
         */
 
-        // Dingocoin: Anything below 1 DINGO is always dust
+        // CZSDoge: Anything below 1 DINGO is always dust
         return COIN;
     }
 
@@ -308,7 +308,7 @@ class CTransaction
 {
 public:
     // Default transaction version.
-    // Dingocoin: Temporarily restricted to v1 for compatibility with 1.10
+    // CZSDoge: Temporarily restricted to v1 for compatibility with 1.10
     static const int32_t CURRENT_VERSION=1;
 
     // Changing the default transaction version requires a two step process: first

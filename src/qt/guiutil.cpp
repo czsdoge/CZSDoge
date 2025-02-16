@@ -125,7 +125,7 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 #if QT_VERSION >= 0x040700
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter a Dingocoin address (e.g. %1)").arg(
+    widget->setPlaceholderText(QObject::tr("Enter a CZSDoge address (e.g. %1)").arg(
         QString::fromStdString(DummyAddress(Params()))));
 #endif
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
@@ -143,8 +143,8 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no dingocoin: URI
-    if(!uri.isValid() || uri.scheme() != QString("dingocoin"))
+    // return if URI is not valid or is no czsdoge: URI
+    if(!uri.isValid() || uri.scheme() != QString("czsdoge"))
         return false;
 
     SendCoinsRecipient rv;
@@ -204,13 +204,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert dingocoin:// to dingocoin:
+    // Convert czsdoge:// to czsdoge:
     //
-    //    Cannot handle this later, because dingocoin:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because czsdoge:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("dingocoin://", Qt::CaseInsensitive))
+    if(uri.startsWith("czsdoge://", Qt::CaseInsensitive))
     {
-        uri.replace(0, 11, "dingocoin:");
+        uri.replace(0, 11, "czsdoge:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -218,7 +218,7 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 
 QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("dingocoin:%1").arg(info.address);
+    QString ret = QString("czsdoge:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
@@ -597,10 +597,10 @@ boost::filesystem::path static StartupShortcutPath()
 {
     std::string chain = ChainNameFromCommandLine();
     if (chain == CBaseChainParams::MAIN)
-        return GetSpecialFolderPath(CSIDL_STARTUP) / "Dingocoin.lnk";
+        return GetSpecialFolderPath(CSIDL_STARTUP) / "CZSDoge.lnk";
     if (chain == CBaseChainParams::TESTNET) // Remove this special case when CBaseChainParams::TESTNET = "testnet4"
-        return GetSpecialFolderPath(CSIDL_STARTUP) / "Dingocoin (testnet).lnk";
-    return GetSpecialFolderPath(CSIDL_STARTUP) / strprintf("Dingocoin (%s).lnk", chain);
+        return GetSpecialFolderPath(CSIDL_STARTUP) / "CZSDoge (testnet).lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / strprintf("CZSDoge (%s).lnk", chain);
 }
 
 bool GetStartOnSystemStartup()
@@ -741,9 +741,9 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         if (chain == CBaseChainParams::MAIN)
-            optionFile << "Name=Dingocoin\n";
+            optionFile << "Name=CZSDoge\n";
         else
-            optionFile << strprintf("Name=Dingocoin (%s)\n", chain);
+            optionFile << strprintf("Name=CZSDoge (%s)\n", chain);
         optionFile << "Exec=" << pszExePath << strprintf(" -min -testnet=%d -regtest=%d\n", GetBoolArg("-testnet", false), GetBoolArg("-regtest", false));
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";

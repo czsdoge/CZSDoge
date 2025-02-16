@@ -36,7 +36,7 @@ private:
 public:
     CTransactionRef tx;
     uint256 hashBlock;
-    // Dingocoin TODO: Is this used? If not remove. If it is, I don't think it's actually set
+    // CZSDoge TODO: Is this used? If not remove. If it is, I don't think it's actually set
     // anywhere. Check with Namecore
     std::vector<uint256> vMerkleBranch;
 

@@ -57,11 +57,11 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case MBTC: return QString("Mega-Dingocoins (1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-    case kBTC: return QString("Kilo-Dingocoins (1" THIN_SP_UTF8 "000)");
-    case BTC: return QString("Dingocoins");
-    case mBTC: return QString("Milli-Dingocoins (1 / 1" THIN_SP_UTF8 "000)");
-    case uBTC: return QString("Micro-Dingocoins (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case MBTC: return QString("Mega-CZSDoges (1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case kBTC: return QString("Kilo-CZSDoges (1" THIN_SP_UTF8 "000)");
+    case BTC: return QString("CZSDoges");
+    case mBTC: return QString("Milli-CZSDoges (1 / 1" THIN_SP_UTF8 "000)");
+    case uBTC: return QString("Micro-CZSDoges (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }

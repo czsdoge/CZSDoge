@@ -689,7 +689,7 @@ BOOST_AUTO_TEST_CASE(test_IsStandard)
     std::string reason;
     BOOST_CHECK(IsStandardTx(t, reason));
 
-    // Dingocoin: Dust is totally different in Dingocoin, disable these tests
+    // CZSDoge: Dust is totally different in CZSDoge, disable these tests
     // Check dust with default relay fee:
     /* CAmount nDustThreshold = 182 * dustRelayFee.GetFeePerK()/1000 * 3;
     BOOST_CHECK_EQUAL(nDustThreshold, 546);

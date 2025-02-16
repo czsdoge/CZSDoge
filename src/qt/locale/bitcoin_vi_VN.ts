@@ -96,7 +96,7 @@
     </message>
 </context>
 <context>
-    <name>DingocoinGUI</name>
+    <name>CZSDogeGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Chứ ký &amp; Tin nhắn...</translation>
@@ -186,8 +186,8 @@
         <translation>Đánh chỉ số (indexing) lại các khối (blocks) trên ổ đĩa ...</translation>
     </message>
     <message>
-        <source>Send coins to a Dingocoin address</source>
-        <translation>Gửi coins đến tài khoản Dingocoin</translation>
+        <source>Send coins to a CZSDoge address</source>
+        <translation>Gửi coins đến tài khoản CZSDoge</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -206,8 +206,8 @@
         <translation>&amp;Tin nhắn xác thực</translation>
     </message>
     <message>
-        <source>Dingocoin</source>
-        <translation>Dingocoin</translation>
+        <source>CZSDoge</source>
+        <translation>CZSDoge</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -234,12 +234,12 @@
         <translation>Mã hoá các khoá bí mật trong Ví của bạn.</translation>
     </message>
     <message>
-        <source>Sign messages with your Dingocoin addresses to prove you own them</source>
-        <translation>Dùng địa chỉ Dingocoin của bạn ký các tin nhắn để xác minh những nội dung tin nhắn đó là của bạn.</translation>
+        <source>Sign messages with your CZSDoge addresses to prove you own them</source>
+        <translation>Dùng địa chỉ CZSDoge của bạn ký các tin nhắn để xác minh những nội dung tin nhắn đó là của bạn.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dingocoin addresses</source>
-        <translation>Kiểm tra các tin nhắn để chắc chắn rằng chúng được ký bằng các địa chỉ Dingocoin xác định.</translation>
+        <source>Verify messages to ensure they were signed with specified CZSDoge addresses</source>
+        <translation>Kiểm tra các tin nhắn để chắc chắn rằng chúng được ký bằng các địa chỉ CZSDoge xác định.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -258,8 +258,8 @@
         <translation>Thanh công cụ (toolbar)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dingocoin: URIs)</source>
-        <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ Dingocoin: URLs)</translation>
+        <source>Request payments (generates QR codes and czsdoge: URIs)</source>
+        <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ CZSDoge: URLs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -270,8 +270,8 @@
         <translation>Hiện thỉ danh sách các địa chỉ và nhãn đã dùng để nhận.</translation>
     </message>
     <message>
-        <source>Open a dingocoin: URI or payment request</source>
-        <translation>Mở dingocoin:URL hoặc yêu cầu thanh toán</translation>
+        <source>Open a czsdoge: URI or payment request</source>
+        <translation>Mở czsdoge:URL hoặc yêu cầu thanh toán</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -536,8 +536,8 @@
         <translation>Ví</translation>
     </message>
     <message>
-        <source>Connect to the Dingocoin network through a SOCKS5 proxy.</source>
-        <translation>Kết nối đến máy chủ Dingocoin thông qua SOCKS5 proxy.</translation>
+        <source>Connect to the CZSDoge network through a SOCKS5 proxy.</source>
+        <translation>Kết nối đến máy chủ CZSDoge thông qua SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1012,14 +1012,14 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>dingocoin-core</name>
+    <name>czsdoge-core</name>
     <message>
         <source>Options:</source>
         <translation>Lựa chọn:</translation>
     </message>
     <message>
-        <source>Dingocoin Core</source>
-        <translation>Dingocoin Core</translation>
+        <source>CZSDoge Core</source>
+        <translation>CZSDoge Core</translation>
     </message>
     <message>
         <source>(default: %u)</source>

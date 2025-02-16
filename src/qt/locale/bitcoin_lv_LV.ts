@@ -64,7 +64,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>DingocoinGUI</name>
+    <name>CZSDogeGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Parakstīt &amp;ziņojumu...</translation>
@@ -142,8 +142,8 @@
         <translation>Bloku reindeksēšana no diska...</translation>
     </message>
     <message>
-        <source>Send coins to a Dingocoin address</source>
-        <translation>Nosūtīt bitkoinu uz Dingocoin adresi</translation>
+        <source>Send coins to a CZSDoge address</source>
+        <translation>Nosūtīt bitkoinu uz CZSDoge adresi</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Pārbaudīt ziņojumu...</translation>
     </message>
     <message>
-        <source>Dingocoin</source>
-        <translation>Dingocoin</translation>
+        <source>CZSDoge</source>
+        <translation>CZSDoge</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Šifrēt privātās atslēgas kuras pieder tavam maciņam</translation>
     </message>
     <message>
-        <source>Sign messages with your Dingocoin addresses to prove you own them</source>
-        <translation>Parakstīt ziņojumus ar savām Dingocoin adresēm lai pierādītu ka tās pieder tev</translation>
+        <source>Sign messages with your CZSDoge addresses to prove you own them</source>
+        <translation>Parakstīt ziņojumus ar savām CZSDoge adresēm lai pierādītu ka tās pieder tev</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dingocoin addresses</source>
-        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām Dingocoin adresēm</translation>
+        <source>Verify messages to ensure they were signed with specified CZSDoge addresses</source>
+        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām CZSDoge adresēm</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -218,12 +218,12 @@
         <translation>Ciļņu rīkjosla</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dingocoin: URIs)</source>
-        <translation>Pieprasīt maksājumus (izveido QR kodu un dingocoin: URIs)</translation>
+        <source>Request payments (generates QR codes and czsdoge: URIs)</source>
+        <translation>Pieprasīt maksājumus (izveido QR kodu un czsdoge: URIs)</translation>
     </message>
     <message>
-        <source>Open a dingocoin: URI or payment request</source>
-        <translation>Atvērt dingocoin URI vai maksājuma pieprasījumu</translation>
+        <source>Open a czsdoge: URI or payment request</source>
+        <translation>Atvērt czsdoge URI vai maksājuma pieprasījumu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -499,15 +499,15 @@
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Ieslēgt dingocoin &amp;kontroles funkcijas</translation>
+        <translation>Ieslēgt czsdoge &amp;kontroles funkcijas</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
         <translation>&amp;Tērēt neapstiprinātu atlikumu</translation>
     </message>
     <message>
-        <source>Automatically open the Dingocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Uz rūtera automātiski atvērt Dingocoin klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
+        <source>Automatically open the CZSDoge client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Uz rūtera automātiski atvērt CZSDoge klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -559,7 +559,7 @@
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Vai rādīt Dingocoin kontroles funkcijas vai nē.</translation>
+        <translation>Vai rādīt CZSDoge kontroles funkcijas vai nē.</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -593,8 +593,8 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dingocoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar Dingocoin tīklu, taču šis process vēl nav beidzies.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CZSDoge network after a connection is established, but this process has not completed yet.</source>
+        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar CZSDoge tīklu, taču šis process vēl nav beidzies.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -852,7 +852,7 @@
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>Dingocoin Kontroles Funkcijas</translation>
+        <translation>CZSDoge Kontroles Funkcijas</translation>
     </message>
     <message>
         <source>Inputs...</source>
@@ -1027,8 +1027,8 @@
         <translation>Kopēt parakstu uz sistēmas starpliktuvi</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Dingocoin address</source>
-        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs Dingocoin adreses īpašnieks.</translation>
+        <source>Sign the message to prove you own this CZSDoge address</source>
+        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs CZSDoge adreses īpašnieks.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1098,7 +1098,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>dingocoin-core</name>
+    <name>czsdoge-core</name>
     <message>
         <source>Options:</source>
         <translation>Iespējas:</translation>
@@ -1124,8 +1124,8 @@
         <translation>Darbināt fonā kā servisu un pieņemt komandas</translation>
     </message>
     <message>
-        <source>Dingocoin Core</source>
-        <translation>Dingocoin Core</translation>
+        <source>CZSDoge Core</source>
+        <translation>CZSDoge Core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

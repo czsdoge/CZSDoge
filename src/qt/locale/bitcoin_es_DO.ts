@@ -64,7 +64,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>DingocoinGUI</name>
+    <name>CZSDogeGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Firmar &amp;mensaje...</translation>
@@ -142,8 +142,8 @@
         <translation>Reindexando bloques en disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Dingocoin address</source>
-        <translation>Enviar monedas a una dirección Dingocoin</translation>
+        <source>Send coins to a CZSDoge address</source>
+        <translation>Enviar monedas a una dirección CZSDoge</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Verificar mensaje...</translation>
     </message>
     <message>
-        <source>Dingocoin</source>
-        <translation>Dingocoin</translation>
+        <source>CZSDoge</source>
+        <translation>CZSDoge</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Cifrar las claves privadas de su monedero</translation>
     </message>
     <message>
-        <source>Sign messages with your Dingocoin addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones Dingocoin para demostrar la propiedad</translation>
+        <source>Sign messages with your CZSDoge addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones CZSDoge para demostrar la propiedad</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dingocoin addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones Dingocoin concretas</translation>
+        <source>Verify messages to ensure they were signed with specified CZSDoge addresses</source>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones CZSDoge concretas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -218,8 +218,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dingocoin: URIs)</source>
-        <translation>Solicitar pagos (genera codigo QR y URL's de Dingocoin)</translation>
+        <source>Request payments (generates QR codes and czsdoge: URIs)</source>
+        <translation>Solicitar pagos (genera codigo QR y URL's de CZSDoge)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -230,8 +230,8 @@
         <translation>Muestra la lista de direcciones de recepción y etiquetas</translation>
     </message>
     <message>
-        <source>Open a dingocoin: URI or payment request</source>
-        <translation>Abrir un dingocoin: URI o petición de pago</translation>
+        <source>Open a czsdoge: URI or payment request</source>
+        <translation>Abrir un czsdoge: URI o petición de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -494,8 +494,8 @@
         <translation>Experto</translation>
     </message>
     <message>
-        <source>Automatically open the Dingocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente Dingocoin en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <source>Automatically open the CZSDoge client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente CZSDoge en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -589,8 +589,8 @@
         <translation>Desde</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dingocoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Dingocoin después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CZSDoge network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red CZSDoge después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -1019,8 +1019,8 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Dingocoin address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección Dingocoin</translation>
+        <source>Sign the message to prove you own this CZSDoge address</source>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección CZSDoge</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1039,8 +1039,8 @@
         <translation>&amp;Verificar mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Dingocoin address</source>
-        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Dingocoin indicada</translation>
+        <source>Verify the message to ensure it was signed with the specified CZSDoge address</source>
+        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección CZSDoge indicada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1094,7 +1094,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>dingocoin-core</name>
+    <name>czsdoge-core</name>
     <message>
         <source>Options:</source>
         <translation>Opciones:
@@ -1123,8 +1123,8 @@
 </translation>
     </message>
     <message>
-        <source>Dingocoin Core</source>
-        <translation>Núcleo de Dingocoin</translation>
+        <source>CZSDoge Core</source>
+        <translation>Núcleo de CZSDoge</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

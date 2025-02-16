@@ -2,26 +2,26 @@
 
 # backward compatibility for existing gentoo layout 
 #
-if [ -d "/var/lib/dingocoin/.dingocoin" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/dingocoin/.dingocoin"
+if [ -d "/var/lib/czsdoge/.czsdoge" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/czsdoge/.czsdoge"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/dingocoind"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/czsdoged"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/dingocoin/dingocoin.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/dingocoind}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/dingocoind.pid}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/czsdoge/czsdoge.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/czsdoged}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/czsdoged.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-${BITCOIN_USER:-dingocoin}}
-BITCOIND_GROUP=${BITCOIND_GROUP:-dingocoin}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/dingocoind}
+BITCOIND_USER=${BITCOIND_USER:-${BITCOIN_USER:-czsdoge}}
+BITCOIND_GROUP=${BITCOIND_GROUP:-czsdoge}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/czsdoged}
 BITCOIND_NICE=${BITCOIND_NICE:-${NICELEVEL:-0}}
 BITCOIND_OPTS="${BITCOIND_OPTS:-${BITCOIN_OPTS}}"
 
 name="Bitcoin Core Daemon"
 description="Bitcoin cryptocurrency P2P network daemon"
 
-command="/usr/bin/dingocoind"
+command="/usr/bin/czsdoged"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -71,7 +71,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run dingocoind."
+		eerror "ERROR: You must set a secure rpcpassword to run czsdoged."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "

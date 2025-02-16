@@ -76,7 +76,7 @@
     </message>
 </context>
 <context>
-    <name>DingocoinGUI</name>
+    <name>CZSDogeGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>&amp;Allekirjoita viesti...</translation>
@@ -166,8 +166,8 @@
         <translation>Ladataan lohkoindeksiä...</translation>
     </message>
     <message>
-        <source>Send coins to a Dingocoin address</source>
-        <translation>Lähetä kolikoita Dingocoin-osoitteeseen</translation>
+        <source>Send coins to a CZSDoge address</source>
+        <translation>Lähetä kolikoita CZSDoge-osoitteeseen</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -190,8 +190,8 @@
         <translation>Varmista &amp;viesti...</translation>
     </message>
     <message>
-        <source>Dingocoin</source>
-        <translation>Dingocoin</translation>
+        <source>CZSDoge</source>
+        <translation>CZSDoge</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -211,19 +211,19 @@
     </message>
     <message>
         <source>Show or hide the main Window</source>
-        <translation>Näytä tai piilota Dingocoin-ikkuna</translation>
+        <translation>Näytä tai piilota CZSDoge-ikkuna</translation>
     </message>
     <message>
         <source>Encrypt the private keys that belong to your wallet</source>
         <translation>Suojaa yksityiset avaimet, jotka kuuluvat lompakkoosi</translation>
     </message>
     <message>
-        <source>Sign messages with your Dingocoin addresses to prove you own them</source>
-        <translation>Allekirjoita viestisi omalla Dingocoin -osoitteellasi todistaaksesi, että omistat ne</translation>
+        <source>Sign messages with your CZSDoge addresses to prove you own them</source>
+        <translation>Allekirjoita viestisi omalla CZSDoge -osoitteellasi todistaaksesi, että omistat ne</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dingocoin addresses</source>
-        <translation>Varmista, että viestisi on allekirjoitettu määritetyllä Dingocoin -osoitteella</translation>
+        <source>Verify messages to ensure they were signed with specified CZSDoge addresses</source>
+        <translation>Varmista, että viestisi on allekirjoitettu määritetyllä CZSDoge -osoitteella</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -242,8 +242,8 @@
         <translation>Välilehtipalkki</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dingocoin: URIs)</source>
-        <translation>Pyydä maksuja (Luo QR koodit ja dingocoin: URIt)</translation>
+        <source>Request payments (generates QR codes and czsdoge: URIs)</source>
+        <translation>Pyydä maksuja (Luo QR koodit ja czsdoge: URIt)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -254,16 +254,16 @@
         <translation>Näytä vastaanottamiseen käytettyjen osoitteiden ja nimien lista</translation>
     </message>
     <message>
-        <source>Open a dingocoin: URI or payment request</source>
-        <translation>Avaa dingocoin: URI tai maksupyyntö</translation>
+        <source>Open a czsdoge: URI or payment request</source>
+        <translation>Avaa czsdoge: URI tai maksupyyntö</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Komentorivin valinnat</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Dingocoin network</source>
-        <translation><numerusform>%n aktiivinen yhteys Dingocoin-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä Dingocoin-verkkoon</numerusform></translation>
+        <source>%n active connection(s) to CZSDoge network</source>
+        <translation><numerusform>%n aktiivinen yhteys CZSDoge-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä CZSDoge-verkkoon</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -306,8 +306,8 @@
         <translation>Rahansiirtohistoria on ajan tasalla</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Dingocoin command-line options</source>
-        <translation>Näytä %1 ohjeet saadaksesi listan mahdollisista Dingocoinin komentorivivalinnoista</translation>
+        <source>Show the %1 help message to get a list with possible CZSDoge command-line options</source>
+        <translation>Näytä %1 ohjeet saadaksesi listan mahdollisista CZSDogein komentorivivalinnoista</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -551,8 +551,8 @@
         <translation>Tämä on ensimmäinen kerta, kun %1 on käynnistetty, joten voit valita data-hakemiston paikan.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Dingocoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 lataa ja tallentaa kopion Dingocoinin lohkoketjusta. Vähintään %2Gt dataa tullaan tallentamaan tähän hakemistoon, ja tarve kasvaa ajan myötä. Lompakko tullaan myös tallentamaan tähän hakemistoon.</translation>
+        <source>%1 will download and store a copy of the CZSDoge block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 lataa ja tallentaa kopion CZSDogein lohkoketjusta. Vähintään %2Gt dataa tullaan tallentamaan tähän hakemistoon, ja tarve kasvaa ajan myötä. Lompakko tullaan myös tallentamaan tähän hakemistoon.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -708,16 +708,16 @@
         <translation>&amp;Käytä varmistamattomia vaihtorahoja</translation>
     </message>
     <message>
-        <source>Automatically open the Dingocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avaa Dingocoin-asiakasohjelman portti reitittimellä automaattisesti. Tämä toimii vain, jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
+        <source>Automatically open the CZSDoge client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avaa CZSDoge-asiakasohjelman portti reitittimellä automaattisesti. Tämä toimii vain, jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Portin uudelleenohjaus &amp;UPnP:llä</translation>
     </message>
     <message>
-        <source>Connect to the Dingocoin network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä Dingocoin-verkkoon SOCKS5-välityspalvelimen kautta.</translation>
+        <source>Connect to the CZSDoge network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä CZSDoge-verkkoon SOCKS5-välityspalvelimen kautta.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -756,8 +756,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Dingocoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Yhdistä Dingocoin-verkkoon erillisen SOCKS5-välityspalvelimen kautta piilotettuja Tor-palveluja varten.</translation>
+        <source>Connect to the CZSDoge network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Yhdistä CZSDoge-verkkoon erillisen SOCKS5-välityspalvelimen kautta piilotettuja Tor-palveluja varten.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -793,11 +793,11 @@
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>Yksikkö jona dingocoin-määrät näytetään</translation>
+        <translation>Yksikkö jona czsdoge-määrät näytetään</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Valitse mitä yksikköä käytetään ensisijaisesti dingocoin-määrien näyttämiseen.</translation>
+        <translation>Valitse mitä yksikköä käytetään ensisijaisesti czsdoge-määrien näyttämiseen.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -847,8 +847,8 @@
         <translation>Lomake</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dingocoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Näytetyt tiedot eivät välttämättä ole ajantasalla. Lompakkosi synkronoituu Dingocoin-verkon kanssa automaattisesti yhteyden muodostamisen jälkeen, mutta synkronointi on vielä meneillään.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CZSDoge network after a connection is established, but this process has not completed yet.</source>
+        <translation>Näytetyt tiedot eivät välttämättä ole ajantasalla. Lompakkosi synkronoituu CZSDoge-verkon kanssa automaattisesti yhteyden muodostamisen jälkeen, mutta synkronointi on vielä meneillään.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -888,7 +888,7 @@
     </message>
     <message>
         <source>Your current total balance</source>
-        <translation>Tililläsi tällä hetkellä olevien Dingocoinien määrä</translation>
+        <translation>Tililläsi tällä hetkellä olevien CZSDogeien määrä</translation>
     </message>
     <message>
         <source>Your current balance in watch-only addresses</source>
@@ -936,8 +936,8 @@
         <translation>Määrä</translation>
     </message>
     <message>
-        <source>Enter a Dingocoin address (e.g. %1)</source>
-        <translation>Syötä Dingocoin-osoite (esim. %1)</translation>
+        <source>Enter a CZSDoge address (e.g. %1)</source>
+        <translation>Syötä CZSDoge-osoite (esim. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1276,8 +1276,8 @@
         <translation>&amp;Uudelleenkäytä vastaanotto-osoitetta (ei suositella)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dingocoin network.</source>
-        <translation>Valinnainen viesti liitetään maksupyyntöön ja näytetään avattaessa. Viestiä ei lähetetä Dingocoin-verkkoon.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the CZSDoge network.</source>
+        <translation>Valinnainen viesti liitetään maksupyyntöön ja näytetään avattaessa. Viestiä ei lähetetä CZSDoge-verkkoon.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1354,7 +1354,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Lähetä Dingocoineja</translation>
+        <translation>Lähetä CZSDogeeja</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1508,8 +1508,8 @@
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The Dingocoin address to send the payment to</source>
-        <translation>Dingocoin-osoite johon maksu lähetetään</translation>
+        <source>The CZSDoge address to send the payment to</source>
+        <translation>CZSDoge-osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1528,8 +1528,8 @@
         <translation>Poista tämä alkio</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less dingocoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Kulu vähennetään lähetettävästä määrästä. Saaja vastaanottaa vähemmän dingocoineja kuin merkitset Määrä-kenttään. Jos saajia on monia, kulu jaetaan tasan.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less czsdoges than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Kulu vähennetään lähetettävästä määrästä. Saaja vastaanottaa vähemmän czsdogeeja kuin merkitset Määrä-kenttään. Jos saajia on monia, kulu jaetaan tasan.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -1552,8 +1552,8 @@
         <translation>Aseta nimi tälle osoitteelle lisätäksesi sen käytettyjen osoitteiden listalle.</translation>
     </message>
     <message>
-        <source>A message that was attached to the dingocoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dingocoin network.</source>
-        <translation>Viesti joka liitettiin dingocoin: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä Dingocoin-verkkoon.</translation>
+        <source>A message that was attached to the czsdoge: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the CZSDoge network.</source>
+        <translation>Viesti joka liitettiin czsdoge: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä CZSDoge-verkkoon.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1589,8 +1589,8 @@
         <translation>&amp;Allekirjoita viesti</translation>
     </message>
     <message>
-        <source>The Dingocoin address to sign the message with</source>
-        <translation>Dingocoin-osoite jolla viesti allekirjoitetaan</translation>
+        <source>The CZSDoge address to sign the message with</source>
+        <translation>CZSDoge-osoite jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1621,8 +1621,8 @@
         <translation>Kopioi tämänhetkinen allekirjoitus leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Dingocoin address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Dingocoin-osoitteen</translation>
+        <source>Sign the message to prove you own this CZSDoge address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän CZSDoge-osoitteen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1641,12 +1641,12 @@
         <translation>&amp;Varmista viesti</translation>
     </message>
     <message>
-        <source>The Dingocoin address the message was signed with</source>
-        <translation>Dingocoin-osoite jolla viesti on allekirjoitettu</translation>
+        <source>The CZSDoge address the message was signed with</source>
+        <translation>CZSDoge-osoite jolla viesti on allekirjoitettu</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Dingocoin address</source>
-        <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä Dingocoin-osoitteella</translation>
+        <source>Verify the message to ensure it was signed with the specified CZSDoge address</source>
+        <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä CZSDoge-osoitteella</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1720,7 +1720,7 @@
     </message>
     </context>
 <context>
-    <name>dingocoin-core</name>
+    <name>czsdoge-core</name>
     <message>
         <source>Options:</source>
         <translation>Asetukset:</translation>
@@ -1778,8 +1778,8 @@
         <translation>HTTP-palvelinta ei voitu käynnistää. Katso debug-lokista lisätietoja.</translation>
     </message>
     <message>
-        <source>Dingocoin Core</source>
-        <translation>Dingocoin-ydin</translation>
+        <source>CZSDoge Core</source>
+        <translation>CZSDoge-ydin</translation>
     </message>
     <message>
         <source>The %s developers</source>

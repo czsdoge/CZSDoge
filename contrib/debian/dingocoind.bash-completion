@@ -1,2 +1,2 @@
-contrib/dingocoind.bash-completion	dingocoind
-contrib/dingocoin-cli.bash-completion	dingocoin-cli
+contrib/czsdoged.bash-completion	czsdoged
+contrib/czsdoge-cli.bash-completion	czsdoge-cli

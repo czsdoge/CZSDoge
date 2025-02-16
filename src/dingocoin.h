@@ -1,4 +1,4 @@
-// Copyright (c) 2015 The Dingocoin Core developers
+// Copyright (c) 2015 The CZSDoge Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,8 +7,8 @@
 #include "chainparams.h"
 
 bool AllowDigishieldMinDifficultyForBlock(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params);
-CAmount GetDingocoinBlockSubsidy(int nHeight, const Consensus::Params& consensusParams, uint256 prevHash);
-unsigned int CalculateDingocoinNextWorkRequired(const CBlockIndex* pindexLast, int64_t nLastRetargetTime, const Consensus::Params& params);
+CAmount GetCZSDogeBlockSubsidy(int nHeight, const Consensus::Params& consensusParams, uint256 prevHash);
+unsigned int CalculateCZSDogeNextWorkRequired(const CBlockIndex* pindexLast, int64_t nLastRetargetTime, const Consensus::Params& params);
 
 /**
  * Check proof-of-work of a block header, taking auxpow into account.
@@ -18,5 +18,5 @@ unsigned int CalculateDingocoinNextWorkRequired(const CBlockIndex* pindexLast, i
  */
 bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& params);
 
-CAmount GetDingocoinMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree);
-CAmount GetDingocoinDustFee(const std::vector<CTxOut> &vout, CFeeRate &baseFeeRate);
+CAmount GetCZSDogeMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree);
+CAmount GetCZSDogeDustFee(const std::vector<CTxOut> &vout, CFeeRate &baseFeeRate);

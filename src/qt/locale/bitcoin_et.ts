@@ -62,12 +62,12 @@
         <translation>Vastuvõtvad aadressid</translation>
     </message>
     <message>
-        <source>These are your Dingocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu Dingocoin aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
+        <source>These are your CZSDoge addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Need on sinu CZSDoge aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
     </message>
     <message>
-        <source>These are your Dingocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Need on sinu Dingocoin aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
+        <source>These are your CZSDoge addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Need on sinu CZSDoge aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,8 +168,8 @@
         <translation>Kinnita rahakoti krüpteerimine.</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DINGOCOINS&lt;/b&gt;!</source>
-        <translation>Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA DINGOCOINID&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CZSDOGES&lt;/b&gt;!</source>
+        <translation>Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA CZSDOGEID&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -220,7 +220,7 @@
     </message>
     </context>
 <context>
-    <name>DingocoinGUI</name>
+    <name>CZSDogeGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Signeeri &amp;sõnum</translation>
@@ -290,8 +290,8 @@
         <translation>Kettal olevate blokkide re-indekseerimine...</translation>
     </message>
     <message>
-        <source>Send coins to a Dingocoin address</source>
-        <translation>Saada münte Dingocoini aadressile</translation>
+        <source>Send coins to a CZSDoge address</source>
+        <translation>Saada münte CZSDogei aadressile</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -314,8 +314,8 @@
         <translation>&amp;Kontrolli sõnumit...</translation>
     </message>
     <message>
-        <source>Dingocoin</source>
-        <translation>Dingocoin</translation>
+        <source>CZSDoge</source>
+        <translation>CZSDoge</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -342,12 +342,12 @@
         <translation>Krüpteeri oma rahakoti privaatvõtmed</translation>
     </message>
     <message>
-        <source>Sign messages with your Dingocoin addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Dingocoini aadressiga</translation>
+        <source>Sign messages with your CZSDoge addresses to prove you own them</source>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma CZSDogei aadressiga</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Dingocoin addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Dingocoini aadressiga</translation>
+        <source>Verify messages to ensure they were signed with specified CZSDoge addresses</source>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud CZSDogei aadressiga</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -366,20 +366,20 @@
         <translation>Vahelehe tööriistariba</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dingocoin: URIs)</source>
-        <translation>Loo maksepäring (genereerib QR koodid ja dingocoini: URId)</translation>
+        <source>Request payments (generates QR codes and czsdoge: URIs)</source>
+        <translation>Loo maksepäring (genereerib QR koodid ja czsdogei: URId)</translation>
     </message>
     <message>
-        <source>Open a dingocoin: URI or payment request</source>
-        <translation>Ava dingocoini: URI või maksepäring</translation>
+        <source>Open a czsdoge: URI or payment request</source>
+        <translation>Ava czsdogei: URI või maksepäring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Käsurea valikud</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Dingocoin network</source>
-        <translation><numerusform>%n aktiivne ühendus Dingocoini võrku</numerusform><numerusform>%n aktiivset ühendust Dingocoini võrku</numerusform></translation>
+        <source>%n active connection(s) to CZSDoge network</source>
+        <translation><numerusform>%n aktiivne ühendus CZSDogei võrku</numerusform><numerusform>%n aktiivset ühendust CZSDogei võrku</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -626,8 +626,8 @@
         <translation>Muuda saatvat aadressi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Dingocoin address.</source>
-        <translation>Sisestatud aadress "%1" ei ole korrektne Dingocoin aadress.</translation>
+        <source>The entered address "%1" is not a valid CZSDoge address.</source>
+        <translation>Sisestatud aadress "%1" ei ole korrektne CZSDoge aadress.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -756,8 +756,8 @@
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically open the Dingocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Dingocoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <source>Automatically open the CZSDoge client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>CZSDogei kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -855,7 +855,7 @@
         <translation>Vorm</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dingocoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CZSDoge network after a connection is established, but this process has not completed yet.</source>
         <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Bitconi võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
@@ -1337,8 +1337,8 @@
         <translation>Maksepäring aegunud.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Dingocoin address</source>
-        <translation>Hoiatus: Ebakorrektne Dingocoin aadress</translation>
+        <source>Warning: Invalid CZSDoge address</source>
+        <translation>Hoiatus: Ebakorrektne CZSDoge aadress</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1417,8 +1417,8 @@
         <translation>&amp;Allkirjastamise teade</translation>
     </message>
     <message>
-        <source>The Dingocoin address to sign the message with</source>
-        <translation>Dingocoin aadress millega sõnum allkirjastada</translation>
+        <source>The CZSDoge address to sign the message with</source>
+        <translation>CZSDoge aadress millega sõnum allkirjastada</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1449,8 +1449,8 @@
         <translation>Kopeeri praegune signatuur vahemällu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Dingocoin address</source>
-        <translation>Allkirjasta sõnum Dingocoini aadressi sulle kuulumise tõestamiseks</translation>
+        <source>Sign the message to prove you own this CZSDoge address</source>
+        <translation>Allkirjasta sõnum CZSDogei aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1469,12 +1469,12 @@
         <translation>&amp;Kinnita Sõnum</translation>
     </message>
     <message>
-        <source>The Dingocoin address the message was signed with</source>
-        <translation>Dingocoin aadress millega sõnum on allkirjastatud</translation>
+        <source>The CZSDoge address the message was signed with</source>
+        <translation>CZSDoge aadress millega sõnum on allkirjastatud</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Dingocoin address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Dingocoini aadressiga.</translation>
+        <source>Verify the message to ensure it was signed with the specified CZSDoge address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud CZSDogei aadressiga.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1732,7 +1732,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>dingocoin-core</name>
+    <name>czsdoge-core</name>
     <message>
         <source>Options:</source>
         <translation>Valikud:</translation>
@@ -1758,8 +1758,8 @@
         <translation>Tööta taustal ning aktsepteeri käsklusi</translation>
     </message>
     <message>
-        <source>Dingocoin Core</source>
-        <translation>Dingocoini tuumik</translation>
+        <source>CZSDoge Core</source>
+        <translation>CZSDogei tuumik</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

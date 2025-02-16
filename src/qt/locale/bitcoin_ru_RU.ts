@@ -64,10 +64,10 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>DingocoinGUI</name>
+    <name>CZSDogeGUI</name>
     <message>
-        <source>Dingocoin</source>
-        <translation>Dingocoin Core</translation>
+        <source>CZSDoge</source>
+        <translation>CZSDoge Core</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -234,14 +234,14 @@
     </message>
     </context>
 <context>
-    <name>dingocoin-core</name>
+    <name>czsdoge-core</name>
     <message>
-        <source>Dingocoin Core</source>
-        <translation>Dingocoin Core</translation>
+        <source>CZSDoge Core</source>
+        <translation>CZSDoge Core</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>dingocoin-core</translation>
+        <translation>czsdoge-core</translation>
     </message>
     <message>
         <source>Information</source>

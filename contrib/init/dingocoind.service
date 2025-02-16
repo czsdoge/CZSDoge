@@ -1,15 +1,15 @@
 [Unit]
-Description=Dingocoin's distributed currency daemon
+Description=CZSDoge's distributed currency daemon
 After=network.target
 
 [Service]
-User=dingocoin
-Group=dingocoin
+User=czsdoge
+Group=czsdoge
 
 Type=forking
-PIDFile=/var/lib/dingocoind/dingocoind.pid
-ExecStart=/usr/bin/dingocoind -daemon -pid=/var/lib/dingocoind/dingocoind.pid \
--conf=/etc/dingocoin/dingocoin.conf -datadir=/var/lib/dingocoind -disablewallet
+PIDFile=/var/lib/czsdoged/czsdoged.pid
+ExecStart=/usr/bin/czsdoged -daemon -pid=/var/lib/czsdoged/czsdoged.pid \
+-conf=/etc/czsdoge/czsdoge.conf -datadir=/var/lib/czsdoged -disablewallet
 
 Restart=always
 PrivateTmp=true

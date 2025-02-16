@@ -1,6 +1,6 @@
 [Protocol]
-exec=dingocoin-qt '%u'
-protocol=dingocoin
+exec=czsdoge-qt '%u'
+protocol=czsdoge
 input=none
 output=none
 helper=true

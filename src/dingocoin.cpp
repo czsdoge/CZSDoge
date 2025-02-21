@@ -1,4 +1,4 @@
-// Copyright (c) 2015 The CZSDoge Core developers
+// Copyright (c) 2015 The BroccoliCoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,7 +8,7 @@
 #include "policy/policy.h"
 #include "arith_uint256.h"
 #include "consensus/params.h"
-#include "czsdoge.h"
+#include "broccolicoin.h"
 #include "txmempool.h"
 #include "util.h"
 #include "validation.h"
@@ -20,7 +20,7 @@ int static generateMTRandom(unsigned int s, int range)
     return dist(gen);
 }
 
-// CZSDoge: Normally minimum difficulty blocks can only occur in between
+// BroccoliCoin: Normally minimum difficulty blocks can only occur in between
 // retarget blocks. However, once we introduce Digishield every block is
 // a retarget, so we need to handle minimum difficulty on all blocks.
 bool AllowDigishieldMinDifficultyForBlock(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
@@ -38,7 +38,7 @@ bool AllowDigishieldMinDifficultyForBlock(const CBlockIndex* pindexLast, const C
     return (pblock->GetBlockTime() > pindexLast->GetBlockTime() + params.nPowTargetSpacing*2);
 }
 
-unsigned int CalculateCZSDogeNextWorkRequired(const CBlockIndex* pindexLast, int64_t nFirstBlockTime, const Consensus::Params& params)
+unsigned int CalculateBroccoliCoinNextWorkRequired(const CBlockIndex* pindexLast, int64_t nFirstBlockTime, const Consensus::Params& params)
 {
     int nHeight = pindexLast->nHeight + 1;
     const int64_t retargetTimespan = params.nPowTargetTimespan;
@@ -129,7 +129,7 @@ bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& 
     return true;
 }
 
-CAmount GetCZSDogeBlockSubsidy(int nHeight, const Consensus::Params& consensusParams, uint256 prevHash)
+CAmount GetBroccoliCoinBlockSubsidy(int nHeight, const Consensus::Params& consensusParams, uint256 prevHash)
 {
     int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
 
@@ -153,7 +153,7 @@ CAmount GetCZSDogeBlockSubsidy(int nHeight, const Consensus::Params& consensusPa
     }
 }
 
-CAmount GetCZSDogeMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree)
+CAmount GetBroccoliCoinMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree)
 {
     {
         LOCK(mempool.cs);
@@ -166,7 +166,7 @@ CAmount GetCZSDogeMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool 
     }
 
     CAmount nMinFee = ::minRelayTxFee.GetFee(nBytes);
-    nMinFee += GetCZSDogeDustFee(tx.vout, ::minRelayTxFee);
+    nMinFee += GetBroccoliCoinDustFee(tx.vout, ::minRelayTxFee);
 
     if (fAllowFree)
     {
@@ -183,7 +183,7 @@ CAmount GetCZSDogeMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool 
     return nMinFee;
 }
 
-CAmount GetCZSDogeDustFee(const std::vector<CTxOut> &vout, CFeeRate &baseFeeRate) {
+CAmount GetBroccoliCoinDustFee(const std::vector<CTxOut> &vout, CFeeRate &baseFeeRate) {
     CAmount nFee = 0;
 
     // To limit dust spam, add base fee for each output less than a COIN

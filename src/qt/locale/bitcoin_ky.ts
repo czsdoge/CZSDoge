@@ -28,7 +28,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>CZSDogeGUI</name>
+    <name>BroccoliCoinGUI</name>
     <message>
         <source>&amp;Transactions</source>
         <translation>&amp;Транзакциялар</translation>
@@ -38,8 +38,8 @@
         <translation>Билдирүүнү &amp;текшерүү...</translation>
     </message>
     <message>
-        <source>CZSDoge</source>
-        <translation>CZSDoge</translation>
+        <source>BroccoliCoin</source>
+        <translation>BroccoliCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -334,7 +334,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>czsdoge-core</name>
+    <name>broccolicoin-core</name>
     <message>
         <source>Information</source>
         <translation>Маалымат</translation>

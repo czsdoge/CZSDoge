@@ -44,11 +44,11 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case MBTC: return QString("MDINGO");
-    case kBTC: return QString("kDINGO");
-    case BTC: return QString("DINGO");
-    case mBTC: return QString("mDINGO");
-    case uBTC: return QString::fromUtf8("μDINGO");
+    case MBTC: return QString("MBROCCOLI");
+    case kBTC: return QString("kBROCCOLI");
+    case BTC: return QString("BROCCOLI");
+    case mBTC: return QString("mBROCCOLI");
+    case uBTC: return QString::fromUtf8("μBROCCOLI");
     default: return QString("???");
     }
 }
@@ -57,11 +57,11 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case MBTC: return QString("Mega-CZSDoges (1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-    case kBTC: return QString("Kilo-CZSDoges (1" THIN_SP_UTF8 "000)");
-    case BTC: return QString("CZSDoges");
-    case mBTC: return QString("Milli-CZSDoges (1 / 1" THIN_SP_UTF8 "000)");
-    case uBTC: return QString("Micro-CZSDoges (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case MBTC: return QString("Mega-BroccoliCoins (1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case kBTC: return QString("Kilo-BroccoliCoins (1" THIN_SP_UTF8 "000)");
+    case BTC: return QString("BroccoliCoins");
+    case mBTC: return QString("Milli-BroccoliCoins (1 / 1" THIN_SP_UTF8 "000)");
+    case uBTC: return QString("Micro-BroccoliCoins (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }

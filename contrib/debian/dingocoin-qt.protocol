@@ -1,6 +1,6 @@
 [Protocol]
-exec=czsdoge-qt '%u'
-protocol=czsdoge
+exec=broccolicoin-qt '%u'
+protocol=broccolicoin
 input=none
 output=none
 helper=true

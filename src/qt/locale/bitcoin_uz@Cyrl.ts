@@ -68,7 +68,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>CZSDogeGUI</name>
+    <name>BroccoliCoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>&amp;Хабар ёзиш...</translation>
@@ -146,8 +146,8 @@
         <translation>Дискдаги блоклар қайта индексланмоқда...</translation>
     </message>
     <message>
-        <source>Send coins to a CZSDoge address</source>
-        <translation>Тангаларни CZSDoge манзилига жўнатиш</translation>
+        <source>Send coins to a BroccoliCoin address</source>
+        <translation>Тангаларни BroccoliCoin манзилига жўнатиш</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -170,8 +170,8 @@
         <translation>Хабарни &amp;тасдиқлаш...</translation>
     </message>
     <message>
-        <source>CZSDoge</source>
-        <translation>CZSDoge</translation>
+        <source>BroccoliCoin</source>
+        <translation>BroccoliCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -198,12 +198,12 @@
         <translation>Ҳамёнингизга тегишли махфий калитларни кодлаш</translation>
     </message>
     <message>
-        <source>Sign messages with your CZSDoge addresses to prove you own them</source>
-        <translation>CZSDoge манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
+        <source>Sign messages with your BroccoliCoin addresses to prove you own them</source>
+        <translation>BroccoliCoin манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified CZSDoge addresses</source>
-        <translation>Хабарларни махсус CZSDoge манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
+        <source>Verify messages to ensure they were signed with specified BroccoliCoin addresses</source>
+        <translation>Хабарларни махсус BroccoliCoin манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -222,8 +222,8 @@
         <translation>Ички ойналар асбоблар панели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and czsdoge: URIs)</source>
-        <translation>Тўловлар (QR кодлари ва czsdoge ёрдамида яратишлар: URI’лар) сўраш</translation>
+        <source>Request payments (generates QR codes and broccolicoin: URIs)</source>
+        <translation>Тўловлар (QR кодлари ва broccolicoin ёрдамида яратишлар: URI’лар) сўраш</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -234,16 +234,16 @@
         <translation>Фойдаланилган қабул қилинган манзиллар ва ёрлиқлар рўйхатини кўрсатиш</translation>
     </message>
     <message>
-        <source>Open a czsdoge: URI or payment request</source>
-        <translation>CZSDoge’ни очиш: URI ёки тўлов сўрови</translation>
+        <source>Open a broccolicoin: URI or payment request</source>
+        <translation>BroccoliCoin’ни очиш: URI ёки тўлов сўрови</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Буйруқлар сатри мосламалари</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to CZSDoge network</source>
-        <translation><numerusform>%n та CZSDoge тармоғига фаол уланиш мавжуд</numerusform></translation>
+        <source>%n active connection(s) to BroccoliCoin network</source>
+        <translation><numerusform>%n та BroccoliCoin тармоғига фаол уланиш мавжуд</numerusform></translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -601,8 +601,8 @@
         <translation>Шакл</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CZSDoge network after a connection is established, but this process has not completed yet.</source>
-        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг CZSDoge тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BroccoliCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг BroccoliCoin тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -682,8 +682,8 @@
         <translation>Миқдори</translation>
     </message>
     <message>
-        <source>Enter a CZSDoge address (e.g. %1)</source>
-        <translation>CZSDoge манзилини киритинг (масалан.  %1)</translation>
+        <source>Enter a BroccoliCoin address (e.g. %1)</source>
+        <translation>BroccoliCoin манзилини киритинг (масалан.  %1)</translation>
     </message>
     <message>
         <source>%1 m</source>
@@ -1190,7 +1190,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>czsdoge-core</name>
+    <name>broccolicoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Танламалар:</translation>
@@ -1208,8 +1208,8 @@
         <translation>Демон сифатида орқа фонда ишга туширинг ва буйруқларга рози бўлинг</translation>
     </message>
     <message>
-        <source>CZSDoge Core</source>
-        <translation>CZSDoge Core</translation>
+        <source>BroccoliCoin Core</source>
+        <translation>BroccoliCoin Core</translation>
     </message>
     <message>
         <source>Connection options:</source>

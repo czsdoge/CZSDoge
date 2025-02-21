@@ -24,23 +24,23 @@ BITCOIN_INCLUDES=-I$(builddir) -I$(builddir)/obj $(BDB_CPPFLAGS) $(BOOST_CPPFLAG
 BITCOIN_INCLUDES += -I$(srcdir)/secp256k1/include
 BITCOIN_INCLUDES += $(UNIVALUE_CFLAGS)
 
-LIBCZSDOGE_SERVER=libczsdoge_server.a
-LIBCZSDOGE_COMMON=libczsdoge_common.a
-LIBCZSDOGE_CONSENSUS=libczsdoge_consensus.a
-LIBCZSDOGE_CLI=libczsdoge_cli.a
-LIBCZSDOGE_UTIL=libczsdoge_util.a
-LIBCZSDOGE_CRYPTO=crypto/libczsdoge_crypto.a
-LIBCZSDOGEQT=qt/libczsdogeqt.a
+LIBBROCCOLICOIN_SERVER=libbroccolicoin_server.a
+LIBBROCCOLICOIN_COMMON=libbroccolicoin_common.a
+LIBBROCCOLICOIN_CONSENSUS=libbroccolicoin_consensus.a
+LIBBROCCOLICOIN_CLI=libbroccolicoin_cli.a
+LIBBROCCOLICOIN_UTIL=libbroccolicoin_util.a
+LIBBROCCOLICOIN_CRYPTO=crypto/libbroccolicoin_crypto.a
+LIBBROCCOLICOINQT=qt/libbroccolicoinqt.a
 LIBSECP256K1=secp256k1/libsecp256k1.la
 
 if ENABLE_ZMQ
-LIBCZSDOGE_ZMQ=libczsdoge_zmq.a
+LIBBROCCOLICOIN_ZMQ=libbroccolicoin_zmq.a
 endif
 if BUILD_BITCOIN_LIBS
-LIBCZSDOGECONSENSUS=libczsdogeconsensus.la
+LIBBROCCOLICOINCONSENSUS=libbroccolicoinconsensus.la
 endif
 if ENABLE_WALLET
-LIBCZSDOGE_WALLET=libczsdoge_wallet.a
+LIBBROCCOLICOIN_WALLET=libbroccolicoin_wallet.a
 endif
 
 $(LIBSECP256K1): $(wildcard secp256k1/src/*) $(wildcard secp256k1/include/*)
@@ -49,16 +49,16 @@ $(LIBSECP256K1): $(wildcard secp256k1/src/*) $(wildcard secp256k1/include/*)
 # Make is not made aware of per-object dependencies to avoid limiting building parallelization
 # But to build the less dependent modules first, we manually select their order here:
 EXTRA_LIBRARIES += \
-  $(LIBCZSDOGE_CRYPTO) \
-  $(LIBCZSDOGE_UTIL) \
-  $(LIBCZSDOGE_COMMON) \
-  $(LIBCZSDOGE_CONSENSUS) \
-  $(LIBCZSDOGE_SERVER) \
-  $(LIBCZSDOGE_CLI) \
-  $(LIBCZSDOGE_WALLET) \
-  $(LIBCZSDOGE_ZMQ)
+  $(LIBBROCCOLICOIN_CRYPTO) \
+  $(LIBBROCCOLICOIN_UTIL) \
+  $(LIBBROCCOLICOIN_COMMON) \
+  $(LIBBROCCOLICOIN_CONSENSUS) \
+  $(LIBBROCCOLICOIN_SERVER) \
+  $(LIBBROCCOLICOIN_CLI) \
+  $(LIBBROCCOLICOIN_WALLET) \
+  $(LIBBROCCOLICOIN_ZMQ)
 
-lib_LTLIBRARIES = $(LIBCZSDOGECONSENSUS)
+lib_LTLIBRARIES = $(LIBBROCCOLICOINCONSENSUS)
 
 bin_PROGRAMS =
 noinst_PROGRAMS =
@@ -66,11 +66,11 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += czsdoged
+  bin_PROGRAMS += broccolicoind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += czsdoge-cli czsdoge-tx
+  bin_PROGRAMS += broccolicoin-cli broccolicoin-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -99,8 +99,8 @@ BITCOIN_CORE_H = \
   core_io.h \
   core_memusage.h \
   cuckoocache.h \
-  czsdoge.cpp \
-  czsdoge.h \
+  broccolicoin.cpp \
+  broccolicoin.h \
   httprpc.h \
   httpserver.h \
   indirectmap.h \
@@ -174,12 +174,12 @@ obj/build.h: FORCE
 	@$(MKDIR_P) $(builddir)/obj
 	@$(top_srcdir)/share/genbuild.sh $(abs_top_builddir)/src/obj/build.h \
 	  $(abs_top_srcdir)
-libczsdoge_util_a-clientversion.$(OBJEXT): obj/build.h
+libbroccolicoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
 # server: shared between bitcoind and bitcoin-qt
-libczsdoge_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
-libczsdoge_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libczsdoge_server_a_SOURCES = \
+libbroccolicoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
+libbroccolicoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbroccolicoin_server_a_SOURCES = \
   addrman.cpp \
   addrdb.cpp \
   bloom.cpp \
@@ -218,9 +218,9 @@ libczsdoge_server_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 if ENABLE_ZMQ
-libczsdoge_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
-libczsdoge_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libczsdoge_zmq_a_SOURCES = \
+libbroccolicoin_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
+libbroccolicoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbroccolicoin_zmq_a_SOURCES = \
   zmq/zmqabstractnotifier.cpp \
   zmq/zmqnotificationinterface.cpp \
   zmq/zmqpublishnotifier.cpp
@@ -229,9 +229,9 @@ endif
 
 # wallet: shared between bitcoind and bitcoin-qt, but only linked
 # when wallet enabled
-libczsdoge_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libczsdoge_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libczsdoge_wallet_a_SOURCES = \
+libbroccolicoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libbroccolicoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbroccolicoin_wallet_a_SOURCES = \
   wallet/crypter.cpp \
   wallet/db.cpp \
   wallet/rpcdump.cpp \
@@ -242,9 +242,9 @@ libczsdoge_wallet_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 # crypto primitives library
-crypto_libczsdoge_crypto_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_CONFIG_INCLUDES)
-crypto_libczsdoge_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-crypto_libczsdoge_crypto_a_SOURCES = \
+crypto_libbroccolicoin_crypto_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_CONFIG_INCLUDES)
+crypto_libbroccolicoin_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+crypto_libbroccolicoin_crypto_a_SOURCES = \
   crypto/aes.cpp \
   crypto/aes.h \
   crypto/chacha20.h \
@@ -266,9 +266,9 @@ crypto_libczsdoge_crypto_a_SOURCES = \
   crypto/sha512.h
 
 # consensus: shared between all executables that validate any consensus rules.
-libczsdoge_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libczsdoge_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libczsdoge_consensus_a_SOURCES = \
+libbroccolicoin_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libbroccolicoin_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbroccolicoin_consensus_a_SOURCES = \
   amount.h \
   arith_uint256.cpp \
   arith_uint256.h \
@@ -303,9 +303,9 @@ libczsdoge_consensus_a_SOURCES = \
   version.h
 
 # common: shared between bitcoind, and bitcoin-qt and non-server tools
-libczsdoge_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libczsdoge_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libczsdoge_common_a_SOURCES = \
+libbroccolicoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libbroccolicoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbroccolicoin_common_a_SOURCES = \
   amount.cpp \
   arith_uint256.cpp \
   auxpow.cpp \
@@ -332,9 +332,9 @@ libczsdoge_common_a_SOURCES = \
 # util: shared between all executables.
 # This library *must* be included to make sure that the glibc
 # backward-compatibility objects and their sanity checks are linked.
-libczsdoge_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libczsdoge_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libczsdoge_util_a_SOURCES = \
+libbroccolicoin_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libbroccolicoin_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbroccolicoin_util_a_SOURCES = \
   support/lockedpool.cpp \
   chainparamsbase.cpp \
   clientversion.cpp \
@@ -353,97 +353,97 @@ libczsdoge_util_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 if GLIBC_BACK_COMPAT
-libczsdoge_util_a_SOURCES += compat/glibc_compat.cpp
+libbroccolicoin_util_a_SOURCES += compat/glibc_compat.cpp
 endif
 
 # cli: shared between bitcoin-cli and bitcoin-qt
-libczsdoge_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libczsdoge_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libczsdoge_cli_a_SOURCES = \
+libbroccolicoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libbroccolicoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbroccolicoin_cli_a_SOURCES = \
   rpc/client.cpp \
   $(BITCOIN_CORE_H)
 
-nodist_libczsdoge_util_a_SOURCES = $(srcdir)/obj/build.h
+nodist_libbroccolicoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-czsdoged_SOURCES = bitcoind.cpp
-czsdoged_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-czsdoged_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-czsdoged_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+broccolicoind_SOURCES = bitcoind.cpp
+broccolicoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+broccolicoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+broccolicoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-czsdoged_SOURCES += bitcoind-res.rc
+broccolicoind_SOURCES += bitcoind-res.rc
 endif
 
-czsdoged_LDADD = \
-  $(LIBCZSDOGE_SERVER) \
-  $(LIBCZSDOGE_COMMON) \
+broccolicoind_LDADD = \
+  $(LIBBROCCOLICOIN_SERVER) \
+  $(LIBBROCCOLICOIN_COMMON) \
   $(LIBUNIVALUE) \
-  $(LIBCZSDOGE_UTIL) \
-  $(LIBCZSDOGE_WALLET) \
-  $(LIBCZSDOGE_ZMQ) \
-  $(LIBCZSDOGE_CONSENSUS) \
-  $(LIBCZSDOGE_CRYPTO) \
+  $(LIBBROCCOLICOIN_UTIL) \
+  $(LIBBROCCOLICOIN_WALLET) \
+  $(LIBBROCCOLICOIN_ZMQ) \
+  $(LIBBROCCOLICOIN_CONSENSUS) \
+  $(LIBBROCCOLICOIN_CRYPTO) \
   $(LIBLEVELDB) \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-czsdoged_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+broccolicoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # bitcoin-cli binary #
-czsdoge_cli_SOURCES = bitcoin-cli.cpp
-czsdoge_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-czsdoge_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-czsdoge_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+broccolicoin_cli_SOURCES = bitcoin-cli.cpp
+broccolicoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+broccolicoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+broccolicoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-czsdoge_cli_SOURCES += bitcoin-cli-res.rc
+broccolicoin_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-czsdoge_cli_LDADD = \
-  $(LIBCZSDOGE_CLI) \
+broccolicoin_cli_LDADD = \
+  $(LIBBROCCOLICOIN_CLI) \
   $(LIBUNIVALUE) \
-  $(LIBCZSDOGE_UTIL) \
-  $(LIBCZSDOGE_CRYPTO)
+  $(LIBBROCCOLICOIN_UTIL) \
+  $(LIBBROCCOLICOIN_CRYPTO)
 
-czsdoge_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+broccolicoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # bitcoin-tx binary #
-czsdoge_tx_SOURCES = bitcoin-tx.cpp
-czsdoge_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-czsdoge_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-czsdoge_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+broccolicoin_tx_SOURCES = bitcoin-tx.cpp
+broccolicoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+broccolicoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+broccolicoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-czsdoge_tx_SOURCES += bitcoin-tx-res.rc
+broccolicoin_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-czsdoge_tx_LDADD = \
+broccolicoin_tx_LDADD = \
   $(LIBUNIVALUE) \
-  $(LIBCZSDOGE_COMMON) \
-  $(LIBCZSDOGE_UTIL) \
-  $(LIBCZSDOGE_CONSENSUS) \
-  $(LIBCZSDOGE_CRYPTO) \
+  $(LIBBROCCOLICOIN_COMMON) \
+  $(LIBBROCCOLICOIN_UTIL) \
+  $(LIBBROCCOLICOIN_CONSENSUS) \
+  $(LIBBROCCOLICOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-czsdoge_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+broccolicoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h
-libczsdogeconsensus_la_SOURCES = $(crypto_libczsdoge_crypto_a_SOURCES) $(libczsdoge_consensus_a_SOURCES)
+libbroccolicoinconsensus_la_SOURCES = $(crypto_libbroccolicoin_crypto_a_SOURCES) $(libbroccolicoin_consensus_a_SOURCES)
 
 if GLIBC_BACK_COMPAT
-  libczsdogeconsensus_la_SOURCES += compat/glibc_compat.cpp
+  libbroccolicoinconsensus_la_SOURCES += compat/glibc_compat.cpp
 endif
 
-libczsdogeconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
-libczsdogeconsensus_la_LIBADD = $(LIBSECP256K1)
-libczsdogeconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_BITCOIN_INTERNAL
-libczsdogeconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libbroccolicoinconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
+libbroccolicoinconsensus_la_LIBADD = $(LIBSECP256K1)
+libbroccolicoinconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_BITCOIN_INTERNAL
+libbroccolicoinconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 
 endif
 #

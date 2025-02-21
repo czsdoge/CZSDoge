@@ -1,11 +1,11 @@
 Sample configuration files for:
 
-SystemD: czsdoged.service
-Upstart: czsdoged.conf
-OpenRC:  czsdoged.openrc
-         czsdoged.openrcconf
-CentOS:  czsdoged.init
-OS X:    org.czsdoge.czsdoged.plist
+SystemD: broccolicoind.service
+Upstart: broccolicoind.conf
+OpenRC:  broccolicoind.openrc
+         broccolicoind.openrcconf
+CentOS:  broccolicoind.init
+OS X:    org.broccolicoin.broccolicoind.plist
 
 have been made available to assist packagers in creating node packages here.
 

@@ -1,13 +1,13 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=CZSDoge Core
-Comment=Connect to the CZSDoge P2P Network
-Comment[de]=Verbinde mit dem CZSDoge peer-to-peer Netzwerk
-Comment[fr]=CZSDoge, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=CZSDoge, eşten eşe kriptografik sanal para birimi
-Exec=czsdoge-qt %u
+Name=BroccoliCoin Core
+Comment=Connect to the BroccoliCoin P2P Network
+Comment[de]=Verbinde mit dem BroccoliCoin peer-to-peer Netzwerk
+Comment[fr]=BroccoliCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BroccoliCoin, eşten eşe kriptografik sanal para birimi
+Exec=broccolicoin-qt %u
 Terminal=false
 Type=Application
-Icon=czsdoge128
-MimeType=x-scheme-handler/czsdoge;
+Icon=broccolicoin128
+MimeType=x-scheme-handler/broccolicoin;
 Categories=Office;Finance;

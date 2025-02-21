@@ -52,7 +52,7 @@
     </message>
     </context>
 <context>
-    <name>CZSDogeGUI</name>
+    <name>BroccoliCoinGUI</name>
     <message>
         <source>&amp;Wow</source>
         <translation>&amp;கண்ணோட்டம்</translation>
@@ -90,8 +90,8 @@
         <translation>&amp;செய்தியை சரிசெய்...</translation>
     </message>
     <message>
-        <source>CZSDoge</source>
-        <translation>CZSDoge</translation>
+        <source>BroccoliCoin</source>
+        <translation>BroccoliCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -706,10 +706,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>czsdoge-core</name>
+    <name>broccolicoin-core</name>
     <message>
-        <source>CZSDoge Core</source>
-        <translation>CZSDoge மையம்</translation>
+        <source>BroccoliCoin Core</source>
+        <translation>BroccoliCoin மையம்</translation>
     </message>
     <message>
         <source>(default: %u)</source>

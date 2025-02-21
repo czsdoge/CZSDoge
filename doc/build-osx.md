@@ -25,17 +25,17 @@ If you want to build the disk image with `make deploy` (.dmg / optional), you ne
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Build CZSDoge Core
+Build BroccoliCoin Core
 ------------------------
 
-1. Clone the czsdoge source code and cd into `czsdoge`
+1. Clone the broccolicoin source code and cd into `broccolicoin`
 
-        git clone https://github.com/czsdoge/czsdoge
-        cd czsdoge
+        git clone https://github.com/broccolicoin/broccolicoin
+        cd broccolicoin
 
-2.  Build czsdoge:
+2.  Build broccolicoin:
 
-    Configure and build the headless czsdoge binaries as well as the GUI (if Qt is found).
+    Configure and build the headless broccolicoin binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -54,37 +54,37 @@ Build CZSDoge Core
 Running
 -------
 
-CZSDoge Core is now available at `./src/czsdoged`
+BroccoliCoin Core is now available at `./src/broccolicoind`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=czsdogerpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/CZSDoge/czsdoge.conf"
+    echo -e "rpcuser=broccolicoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/BroccoliCoin/broccolicoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/CZSDoge/czsdoge.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/BroccoliCoin/broccolicoin.conf"
 
-The first time you run czsdoged, it will start downloading the blockchain. This process could take several hours.
+The first time you run broccolicoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/CZSDoge/debug.log
+    tail -f $HOME/Library/Application\ Support/BroccoliCoin/debug.log
 
 Other commands:
 -------
 
-    ./src/czsdoged -daemon # Starts the czsdoge daemon.
-    ./src/czsdoge-cli --help # Outputs a list of command-line options.
-    ./src/czsdoge-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/broccolicoind -daemon # Starts the broccolicoin daemon.
+    ./src/broccolicoin-cli --help # Outputs a list of command-line options.
+    ./src/broccolicoin-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Using Qt Creator as IDE
 ------------------------
-You can use Qt Creator as an IDE, for czsdoge development.
+You can use Qt Creator as an IDE, for broccolicoin development.
 Download and install the community edition of [Qt Creator](https://www.qt.io/download/).
 Uncheck everything except Qt Creator during the installation process.
 
 1. Make sure you installed everything through Homebrew mentioned above
 2. Do a proper ./configure --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "czsdoge-qt" as project name, enter src/qt as location
+4. Enter "broccolicoin-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
@@ -97,4 +97,4 @@ Notes
 
 * Tested on OS X 10.8 through 10.12 on 64-bit Intel processors only.
 
-* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/czsdoge/czsdoge/issues/7714)
+* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/broccolicoin/broccolicoin/issues/7714)

@@ -1,36 +1,36 @@
 #!/bin/bash
 #
-#  czsdoged The czsdoge core server.
+#  broccolicoind The broccolicoin core server.
 #
 #
 # chkconfig: 345 80 20
-# description: czsdoged
-# processname: czsdoged
+# description: broccolicoind
+# processname: broccolicoind
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/czsdoged, see below
-if [ -f /etc/sysconfig/czsdoged ]; then
-        . /etc/sysconfig/czsdoged
+# you can override defaults in /etc/sysconfig/broccolicoind, see below
+if [ -f /etc/sysconfig/broccolicoind ]; then
+        . /etc/sysconfig/broccolicoind
 fi
 
 RETVAL=0
 
-prog=czsdoged
-# you can override the lockfile via CZSDOGED_LOCKFILE in /etc/sysconfig/czsdoged
-lockfile=${CZSDOGED_LOCKFILE-/var/lock/subsys/czsdoged}
+prog=broccolicoind
+# you can override the lockfile via BROCCOLICOIND_LOCKFILE in /etc/sysconfig/broccolicoind
+lockfile=${BROCCOLICOIND_LOCKFILE-/var/lock/subsys/broccolicoind}
 
-# czsdoged defaults to /usr/bin/czsdoged, override with CZSDOGED_BIN
-czsdoged=${CZSDOGED_BIN-/usr/bin/czsdoged}
+# broccolicoind defaults to /usr/bin/broccolicoind, override with BROCCOLICOIND_BIN
+broccolicoind=${BROCCOLICOIND_BIN-/usr/bin/broccolicoind}
 
-# czsdoged opts default to -disablewallet, override with CZSDOGED_OPTS
-czsdoged_opts=${CZSDOGED_OPTS--disablewallet}
+# broccolicoind opts default to -disablewallet, override with BROCCOLICOIND_OPTS
+broccolicoind_opts=${BROCCOLICOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $czsdoged $czsdoged_opts
+    daemon $DAEMONOPTS $broccolicoind $broccolicoind_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

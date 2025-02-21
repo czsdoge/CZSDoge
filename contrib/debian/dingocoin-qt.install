@@ -1,6 +1,6 @@
-usr/local/bin/czsdoge-qt usr/bin
+usr/local/bin/broccolicoin-qt usr/bin
 share/pixmaps/bitcoin32.xpm usr/share/pixmaps
 share/pixmaps/bitcoin16.xpm usr/share/pixmaps
 share/pixmaps/bitcoin128.png usr/share/pixmaps
-debian/czsdoge-qt.desktop usr/share/applications
-debian/czsdoge-qt.protocol usr/share/kde4/services/
+debian/broccolicoin-qt.desktop usr/share/applications
+debian/broccolicoin-qt.protocol usr/share/kde4/services/

@@ -56,7 +56,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>CZSDogeGUI</name>
+    <name>BroccoliCoinGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Sincronizando con la red...</translation>
@@ -110,16 +110,16 @@
         <translation>Recibiendo direcciones</translation>
     </message>
     <message>
-        <source>Send coins to a CZSDoge address</source>
-        <translation>Enviar monedas a una dirección CZSDoge</translation>
+        <source>Send coins to a BroccoliCoin address</source>
+        <translation>Enviar monedas a una dirección BroccoliCoin</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
         <translation>Cambie la clave utilizada para el cifrado del monedero</translation>
     </message>
     <message>
-        <source>CZSDoge</source>
-        <translation>CZSDoge</translation>
+        <source>BroccoliCoin</source>
+        <translation>BroccoliCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -437,7 +437,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>czsdoge-core</name>
+    <name>broccolicoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Opciones:</translation>

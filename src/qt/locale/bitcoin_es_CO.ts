@@ -64,7 +64,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>CZSDogeGUI</name>
+    <name>BroccoliCoinGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Sincronizando con la red...</translation>
@@ -126,8 +126,8 @@
         <translation>Abrir &amp;URL...</translation>
     </message>
     <message>
-        <source>Send coins to a CZSDoge address</source>
-        <translation>Enviando monedas a una dirección de CZSDoge</translation>
+        <source>Send coins to a BroccoliCoin address</source>
+        <translation>Enviando monedas a una dirección de BroccoliCoin</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -146,8 +146,8 @@
         <translation>&amp;Verificar Mensaje...</translation>
     </message>
     <message>
-        <source>CZSDoge</source>
-        <translation>CZSDoge</translation>
+        <source>BroccoliCoin</source>
+        <translation>BroccoliCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -294,10 +294,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>czsdoge-core</name>
+    <name>broccolicoin-core</name>
     <message>
-        <source>CZSDoge Core</source>
-        <translation>CZSDoge Core</translation>
+        <source>BroccoliCoin Core</source>
+        <translation>BroccoliCoin Core</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

@@ -64,7 +64,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>CZSDogeGUI</name>
+    <name>BroccoliCoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>&amp;Asinar mensaxe...</translation>
@@ -130,8 +130,8 @@
         <translation>Reindexando bloques no disco...</translation>
     </message>
     <message>
-        <source>Send coins to a CZSDoge address</source>
-        <translation>Enviar moedas a unha dirección CZSDoge</translation>
+        <source>Send coins to a BroccoliCoin address</source>
+        <translation>Enviar moedas a unha dirección BroccoliCoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -154,8 +154,8 @@
         <translation>&amp;Verificar mensaxe...</translation>
     </message>
     <message>
-        <source>CZSDoge</source>
-        <translation>CZSDoge</translation>
+        <source>BroccoliCoin</source>
+        <translation>BroccoliCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -182,12 +182,12 @@
         <translation>Encriptar as claves privadas que pertencen ao teu moedeiro</translation>
     </message>
     <message>
-        <source>Sign messages with your CZSDoge addresses to prove you own them</source>
-        <translation>Asina mensaxes coas túas direccións CZSDoge para probar que te pertencen</translation>
+        <source>Sign messages with your BroccoliCoin addresses to prove you own them</source>
+        <translation>Asina mensaxes coas túas direccións BroccoliCoin para probar que te pertencen</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified CZSDoge addresses</source>
-        <translation>Verificar mensaxes para asegurar que foron asinados con direccións CZSDoge dadas.</translation>
+        <source>Verify messages to ensure they were signed with specified BroccoliCoin addresses</source>
+        <translation>Verificar mensaxes para asegurar que foron asinados con direccións BroccoliCoin dadas.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -206,8 +206,8 @@
         <translation>Barra de ferramentas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and czsdoge: URIs)</source>
-        <translation>Solicitar pagos (xenera códigos QR e czsdoge: URIs)</translation>
+        <source>Request payments (generates QR codes and broccolicoin: URIs)</source>
+        <translation>Solicitar pagos (xenera códigos QR e broccolicoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -218,8 +218,8 @@
         <translation>Amosar a listaxe de etiquetas e direccións para recibir empregadas</translation>
     </message>
     <message>
-        <source>Open a czsdoge: URI or payment request</source>
-        <translation>Abrir un czsdoge: URI ou solicitude de pago</translation>
+        <source>Open a broccolicoin: URI or payment request</source>
+        <translation>Abrir un broccolicoin: URI ou solicitude de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -466,8 +466,8 @@
         <translation>Moedeiro</translation>
     </message>
     <message>
-        <source>Automatically open the CZSDoge client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente o porto do cliente CZSDoge no router. Esto so funciona se o teu router soporta UPnP e está habilitado.</translation>
+        <source>Automatically open the BroccoliCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente o porto do cliente BroccoliCoin no router. Esto so funciona se o teu router soporta UPnP e está habilitado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -545,8 +545,8 @@
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CZSDoge network after a connection is established, but this process has not completed yet.</source>
-        <translation>A información amosada por estar desactualizada. O teu moedeiro sincronízase automáticamente coa rede CZSDoge despois de que se estableza unha conexión, pero este proceso non está todavía rematado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BroccoliCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>A información amosada por estar desactualizada. O teu moedeiro sincronízase automáticamente coa rede BroccoliCoin despois de que se estableza unha conexión, pero este proceso non está todavía rematado.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -927,8 +927,8 @@
         <translation>Copiar a sinatura actual ao portapapeis do sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this CZSDoge address</source>
-        <translation>Asina a mensaxe para probar que posees esta dirección CZSDoge</translation>
+        <source>Sign the message to prove you own this BroccoliCoin address</source>
+        <translation>Asina a mensaxe para probar que posees esta dirección BroccoliCoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -947,8 +947,8 @@
         <translation>&amp;Verificar Mensaxe</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified CZSDoge address</source>
-        <translation>Verificar a mensaxe para asegurar que foi asinada coa dirección CZSDoge especificada</translation>
+        <source>Verify the message to ensure it was signed with the specified BroccoliCoin address</source>
+        <translation>Verificar a mensaxe para asegurar que foi asinada coa dirección BroccoliCoin especificada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1002,7 +1002,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>czsdoge-core</name>
+    <name>broccolicoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Opcións:</translation>
@@ -1028,8 +1028,8 @@
         <translation>Executar no fondo como un demo e aceptar comandos</translation>
     </message>
     <message>
-        <source>CZSDoge Core</source>
-        <translation>Core de CZSDoge</translation>
+        <source>BroccoliCoin Core</source>
+        <translation>Core de BroccoliCoin</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

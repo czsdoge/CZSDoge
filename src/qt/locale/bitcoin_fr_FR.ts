@@ -128,7 +128,7 @@
     </message>
 </context>
 <context>
-    <name>CZSDogeGUI</name>
+    <name>BroccoliCoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Signer &amp;message...</translation>
@@ -218,8 +218,8 @@
         <translation>Réindexer les blocs sur le disque...</translation>
     </message>
     <message>
-        <source>Send coins to a CZSDoge address</source>
-        <translation>Envoyer des pièces à une adresse CZSDoge</translation>
+        <source>Send coins to a BroccoliCoin address</source>
+        <translation>Envoyer des pièces à une adresse BroccoliCoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -242,8 +242,8 @@
         <translation>&amp;Vérification du message</translation>
     </message>
     <message>
-        <source>CZSDoge</source>
-        <translation>CZSDoge</translation>
+        <source>BroccoliCoin</source>
+        <translation>BroccoliCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -270,8 +270,8 @@
         <translation>Crypter les clé privées qui appartiennent votre portefeuille</translation>
     </message>
     <message>
-        <source>Sign messages with your CZSDoge addresses to prove you own them</source>
-        <translation>Signer vos messages avec vos adresses CZSDoge pour prouver que vous les détenez</translation>
+        <source>Sign messages with your BroccoliCoin addresses to prove you own them</source>
+        <translation>Signer vos messages avec vos adresses BroccoliCoin pour prouver que vous les détenez</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -290,24 +290,24 @@
         <translation>Barre d'outils des onglets</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and czsdoge: URIs)</source>
-        <translation>Demander des paiements (générer QR codes et czsdoge: URIs)</translation>
+        <source>Request payments (generates QR codes and broccolicoin: URIs)</source>
+        <translation>Demander des paiements (générer QR codes et broccolicoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
         <translation>Montrer la liste des adresses d'envois utilisées et les étiquettes</translation>
     </message>
     <message>
-        <source>Open a czsdoge: URI or payment request</source>
-        <translation>Ouvrir un czsdoge: URI ou demande de paiement</translation>
+        <source>Open a broccolicoin: URI or payment request</source>
+        <translation>Ouvrir un broccolicoin: URI ou demande de paiement</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Options de ligne de commande</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to CZSDoge network</source>
-        <translation><numerusform>%n connexion active au réseau CZSDoge</numerusform><numerusform>%n connexions actives au réseau CZSDoge</numerusform></translation>
+        <source>%n active connection(s) to BroccoliCoin network</source>
+        <translation><numerusform>%n connexion active au réseau BroccoliCoin</numerusform><numerusform>%n connexions actives au réseau BroccoliCoin</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -684,8 +684,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically open the CZSDoge client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir le port du client CZSDoge automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
+        <source>Automatically open the BroccoliCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir le port du client BroccoliCoin automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -844,8 +844,8 @@
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a CZSDoge address (e.g. %1)</source>
-        <translation>Entrer une adresse CZSDoge (e.g. %1)</translation>
+        <source>Enter a BroccoliCoin address (e.g. %1)</source>
+        <translation>Entrer une adresse BroccoliCoin (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1636,7 +1636,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>czsdoge-core</name>
+    <name>broccolicoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Options :</translation>
@@ -1662,8 +1662,8 @@
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-        <source>CZSDoge Core</source>
-        <translation>CZSDoge Core</translation>
+        <source>BroccoliCoin Core</source>
+        <translation>BroccoliCoin Core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

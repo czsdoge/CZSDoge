@@ -1,16 +1,16 @@
-# CZSDoge Core [CZSDOGE, Ȼ]
+# BroccoliCoin Core [BROCCOLICOIN, Ȼ]
 
-![CZSDoge](https://CZSDoge.org/img/logos/CZSDoge/logo/czsdoge_coin256.png)
+![BroccoliCoin](https://BroccoliCoin.org/img/logos/BroccoliCoin/logo/broccolicoin_coin256.png)
 
-[![Build Status](https://travis-ci.com/CZSDoge/CZSDoge.svg?branch=master)](https://travis-ci.com/CZSDoge/CZSDoge)
+[![Build Status](https://travis-ci.com/BroccoliCoin/BroccoliCoin.svg?branch=master)](https://travis-ci.com/BroccoliCoin/BroccoliCoin)
 
-CZSDoge is a cryptocurrency like Bitcoin, although it does not use SHA256 as
+BroccoliCoin is a cryptocurrency like Bitcoin, although it does not use SHA256 as
 its proof of work (POW). Taking development cues from Tenebrix and Litecoin,
-CZSDoge currently employs a simplified variant of scrypt.
-- **Website:** [CZSDoge.org](https://CZSDoge.org)
+BroccoliCoin currently employs a simplified variant of scrypt.
+- **Website:** [BroccoliCoin.org](https://BroccoliCoin.org)
 
 ## License – Much license ⚖️
-CZSDoge Core is released under the terms of the MIT license. See
+BroccoliCoin Core is released under the terms of the MIT license. See
 [COPYING](COPYING) for more information or see
 [opensource.org](https://opensource.org/licenses/MIT)
 
@@ -52,7 +52,7 @@ not straightforward.
 
 ## Very Much Frequently Asked Questions ❓
 
-### How much czsdoge can exist? – So many puppies! 🐕
+### How much broccolicoin can exist? – So many puppies! 🐕
 Mid 2022 (approximately a year and a half after release) there will be
 approximately 100,000,000,000 coins.
 Each subsequent block will grant 10,000 coins to encourage miners to continue to
@@ -62,11 +62,11 @@ encryption passwords/etc.
 
 ### Such mining information ⛏
 
-CZSDoge uses a simplified variant of the scrypt key derivation function as its
+BroccoliCoin uses a simplified variant of the scrypt key derivation function as its
 proof of work with a target time of one minute per block and difficulty
 readjustment after every block. The block rewards are fixed and halve every
 100,000 blocks. Starting with the 600,000th block, a permanent reward of
-10,000 CZSDoge per block will be issued.  
+10,000 BroccoliCoin per block will be issued.  
 
 Originally, a different payout scheme was envisioned with block rewards being
 determined by taking the maximum reward as per the block schedule and applying
@@ -81,41 +81,41 @@ lessen the impact of sudden increases and decreases of network hashing rate.
 
 **The current block reward schedule:**
 
-1–4,999: 0–1,000,000 CZSDoge
+1–4,999: 0–1,000,000 BroccoliCoin
 
-5,000–99,999: 500,000 CZSDoge
+5,000–99,999: 500,000 BroccoliCoin
 
-100,000–199,999: 250,000 CZSDoge
+100,000–199,999: 250,000 BroccoliCoin
 
-200,000–299,999: 125,000 CZSDoge
+200,000–299,999: 125,000 BroccoliCoin
 
-300,000–399,999: 62,500 CZSDoge
+300,000–399,999: 62,500 BroccoliCoin
 
-400,000–499,999: 31,250 CZSDoge
+400,000–499,999: 31,250 BroccoliCoin
 
-500,000–599,999: 15,625 CZSDoge
+500,000–599,999: 15,625 BroccoliCoin
 
-600,000+: 10,000 CZSDoge
+600,000+: 10,000 BroccoliCoin
 
 **The original block reward schedule, with one-minute block targets and four-hour difficulty readjustment:**
 
-1–99,999: 0–1,000,000 CZSDoge
+1–99,999: 0–1,000,000 BroccoliCoin
 
-100,000–199,999: 0–500,000 CZSDoge
+100,000–199,999: 0–500,000 BroccoliCoin
 
-200,000–299,999: 0–250,000 CZSDoge
+200,000–299,999: 0–250,000 BroccoliCoin
 
-300,000–399,999: 0–125,000 CZSDoge
+300,000–399,999: 0–125,000 BroccoliCoin
 
-400,000–499,999: 0–62,500 CZSDoge
+400,000–499,999: 0–62,500 BroccoliCoin
 
-500,000–599,999: 0–31,250 CZSDoge
+500,000–599,999: 0–31,250 BroccoliCoin
 
-600,000+: 10,000 CZSDoge
+600,000+: 10,000 BroccoliCoin
 
-### Wow plz make CZSDoged/CZSDoge-cli/CZSDoge-qt
+### Wow plz make BroccoliCoind/BroccoliCoin-cli/BroccoliCoin-qt
 
-  The following are developer notes on how to build CZSDoge on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+  The following are developer notes on how to build BroccoliCoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
   - [OSX Build Notes](doc/build-osx.md)
   - [Unix Build Notes](doc/build-unix.md)
@@ -146,7 +146,7 @@ to see it.
 
 **testnet and regtest modes**
 
-Run with the `-testnet` option to run with "play CZSDoges" on the test network, if you
+Run with the `-testnet` option to run with "play BroccoliCoins" on the test network, if you
 are testing multi-machine code that needs to operate across the internet.
 
 If you are testing something that can run on one machine, run with the `-regtest` option.
@@ -155,7 +155,7 @@ that run in `-regtest` mode.
 
 **DEBUG_LOCKORDER**
 
-CZSDoge Core is a multithreaded application, and deadlocks or other multithreading bugs
+BroccoliCoin Core is a multithreaded application, and deadlocks or other multithreading bugs
 can be very difficult to track down. Compiling with `-DDEBUG_LOCKORDER` (`configure
 CXXFLAGS="-DDEBUG_LOCKORDER -g"`) inserts run-time checks to keep track of which locks
 are held, and adds warnings to the debug.log file if inconsistencies are detected.

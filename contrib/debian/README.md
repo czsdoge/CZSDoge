@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package czsdoged/czsdoge-qt
-for Debian-based Linux systems. If you compile czsdoged/czsdoge-qt yourself, there are some useful files here.
+This directory contains files used to package broccolicoind/broccolicoin-qt
+for Debian-based Linux systems. If you compile broccolicoind/broccolicoin-qt yourself, there are some useful files here.
 
-## czsdoge: URI support ##
+## broccolicoin: URI support ##
 
 
-czsdoge-qt.desktop  (Gnome / Open Desktop)
+broccolicoin-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install czsdoge-qt.desktop
+	sudo desktop-file-install broccolicoin-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your czsdoge-qt binary to `/usr/bin`
+the .desktop file or copy or symlink your broccolicoin-qt binary to `/usr/bin`
 and the `../../share/pixmaps/bitcoin128.png` to `/usr/share/pixmaps`
 
-czsdoge-qt.protocol (KDE)
+broccolicoin-qt.protocol (KDE)
 

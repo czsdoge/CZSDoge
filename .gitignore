@@ -1,13 +1,13 @@
 *.tar.gz
 
 *.exe
-src/czsdoge
-src/czsdoged
-src/czsdoge-cli
-src/czsdoge-tx
-src/test/test_czsdoge
-src/test/test_czsdoge_fuzzy
-src/qt/test/test_czsdoge-qt
+src/broccolicoin
+src/broccolicoind
+src/broccolicoin-cli
+src/broccolicoin-tx
+src/test/test_broccolicoin
+src/test/test_broccolicoin_fuzzy
+src/qt/test/test_broccolicoin-qt
 
 # autoreconf
 Makefile.in
@@ -74,12 +74,12 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-czsdoge-qt
+broccolicoin-qt
 Bitcoin-Qt.app
 
 # Unit-tests
 Makefile.test
-czsdoge-qt_test
+broccolicoin-qt_test
 src/test/buildenv.py
 
 # Resources cpp

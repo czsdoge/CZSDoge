@@ -1,4 +1,4 @@
-// Copyright (c) 2015 The CZSDoge Core developers
+// Copyright (c) 2015 The BroccoliCoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,8 +7,8 @@
 #include "chainparams.h"
 
 bool AllowDigishieldMinDifficultyForBlock(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params);
-CAmount GetCZSDogeBlockSubsidy(int nHeight, const Consensus::Params& consensusParams, uint256 prevHash);
-unsigned int CalculateCZSDogeNextWorkRequired(const CBlockIndex* pindexLast, int64_t nLastRetargetTime, const Consensus::Params& params);
+CAmount GetBroccoliCoinBlockSubsidy(int nHeight, const Consensus::Params& consensusParams, uint256 prevHash);
+unsigned int CalculateBroccoliCoinNextWorkRequired(const CBlockIndex* pindexLast, int64_t nLastRetargetTime, const Consensus::Params& params);
 
 /**
  * Check proof-of-work of a block header, taking auxpow into account.
@@ -18,5 +18,5 @@ unsigned int CalculateCZSDogeNextWorkRequired(const CBlockIndex* pindexLast, int
  */
 bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& params);
 
-CAmount GetCZSDogeMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree);
-CAmount GetCZSDogeDustFee(const std::vector<CTxOut> &vout, CFeeRate &baseFeeRate);
+CAmount GetBroccoliCoinMinRelayFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree);
+CAmount GetBroccoliCoinDustFee(const std::vector<CTxOut> &vout, CFeeRate &baseFeeRate);

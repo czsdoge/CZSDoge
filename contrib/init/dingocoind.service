@@ -1,15 +1,15 @@
 [Unit]
-Description=CZSDoge's distributed currency daemon
+Description=BroccoliCoin's distributed currency daemon
 After=network.target
 
 [Service]
-User=czsdoge
-Group=czsdoge
+User=broccolicoin
+Group=broccolicoin
 
 Type=forking
-PIDFile=/var/lib/czsdoged/czsdoged.pid
-ExecStart=/usr/bin/czsdoged -daemon -pid=/var/lib/czsdoged/czsdoged.pid \
--conf=/etc/czsdoge/czsdoge.conf -datadir=/var/lib/czsdoged -disablewallet
+PIDFile=/var/lib/broccolicoind/broccolicoind.pid
+ExecStart=/usr/bin/broccolicoind -daemon -pid=/var/lib/broccolicoind/broccolicoind.pid \
+-conf=/etc/broccolicoin/broccolicoin.conf -datadir=/var/lib/broccolicoind -disablewallet
 
 Restart=always
 PrivateTmp=true

@@ -64,10 +64,10 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>CZSDogeGUI</name>
+    <name>BroccoliCoinGUI</name>
     <message>
-        <source>CZSDoge</source>
-        <translation>CZSDoge Core</translation>
+        <source>BroccoliCoin</source>
+        <translation>BroccoliCoin Core</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -234,14 +234,14 @@
     </message>
     </context>
 <context>
-    <name>czsdoge-core</name>
+    <name>broccolicoin-core</name>
     <message>
-        <source>CZSDoge Core</source>
-        <translation>CZSDoge Core</translation>
+        <source>BroccoliCoin Core</source>
+        <translation>BroccoliCoin Core</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>czsdoge-core</translation>
+        <translation>broccolicoin-core</translation>
     </message>
     <message>
         <source>Information</source>

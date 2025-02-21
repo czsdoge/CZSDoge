@@ -42,7 +42,7 @@ jobs:
     - name: Prepare Files for Artifact
       run: |
         mkdir -p $ARTIFACT_DIR
-        mv depends.tar.gz czsdoge-*.tar.gz $ARTIFACT_DIR
+        mv depends.tar.gz broccolicoin-*.tar.gz $ARTIFACT_DIR
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
@@ -63,21 +63,21 @@ jobs:
     - name: Extract Archives
       run: |
         tar -xzf depends.tar.gz
-        tar -xzf czsdoge-*.tar.gz --strip-components=1
+        tar -xzf broccolicoin-*.tar.gz --strip-components=1
     - name: Install Required Packages
       run: |
         sudo apt-get update
         sudo apt-get install -y python3-zmq
     - name: Build Dependencies
       run: make -C depends -j$(nproc)
-    - name: Build CZSDoge
+    - name: Build BroccoliCoin
       run: |
         ./configure --prefix=$(realpath depends/x86_64-pc-linux-gnu) --disable-tests
         make -j$(nproc)
     - name: Prepare Files for Artifact
       run: |
         mkdir -p $ARTIFACT_DIR
-        mv ./src/{czsdoge-cli,czsdoge-tx,czsdoged,qt/czsdoge-qt} $ARTIFACT_DIR
+        mv ./src/{broccolicoin-cli,broccolicoin-tx,broccolicoind,qt/broccolicoin-qt} $ARTIFACT_DIR
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
@@ -97,7 +97,7 @@ jobs:
     - name: Extract Archives
       run: |
         tar -xzf depends.tar.gz
-        tar -xzf czsdoge-*.tar.gz --strip-components=1
+        tar -xzf broccolicoin-*.tar.gz --strip-components=1
     - name: Install Required Packages
       run: |
         sudo apt-get update
@@ -108,14 +108,14 @@ jobs:
         sudo update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix
     - name: Build Dependencies
       run: make -C depends -j$(nproc) HOST=x86_64-w64-mingw32
-    - name: Build CZSDoge
+    - name: Build BroccoliCoin
       run: |
         ./configure --prefix=$(realpath depends/x86_64-w64-mingw32)
         make -j$(nproc)
     - name: Prepare Files for Artifact
       run: |
         mkdir -p $ARTIFACT_DIR
-        mv ./src/{czsdoge-cli.exe,czsdoge-tx.exe,czsdoged.exe,qt/czsdoge-qt.exe} $ARTIFACT_DIR
+        mv ./src/{broccolicoin-cli.exe,broccolicoin-tx.exe,broccolicoind.exe,qt/broccolicoin-qt.exe} $ARTIFACT_DIR
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
@@ -176,16 +176,16 @@ jobs:
   #       with:
   #         path: ~/.ccache
   #         key: ${{ env.name }}-${{ env.cache-name }}-${{ hashFiles('**/configure.ac') }}
-  #     - name: Build CZSDoge
+  #     - name: Build BroccoliCoin
   #       run: |
   #         depends/${{ env.host }}/native/bin/ccache --max-size=100M
   #         ./autogen.sh
   #         ./configure --prefix=`pwd`/depends/${{ env.host }} ${{ env.config-opts }} || ( cat config.log && false)
   #         make ${{ env.goal }} || ( echo "Build failure. Verbose build follows." && make ${{ env.goal }} V=1 ; false )
-  #         mv CZSDoge-Core.dmg CZSDoge.dmg
+  #         mv BroccoliCoin-Core.dmg BroccoliCoin.dmg
   #     - name: Upload artifacts
   #       uses: actions/upload-artifact@v4
   #       with:
   #         name: macos-binaries
   #         path: |
-  #           CZSDoge.dmg
+  #           BroccoliCoin.dmg

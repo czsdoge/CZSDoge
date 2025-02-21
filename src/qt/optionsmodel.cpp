@@ -74,7 +74,7 @@ void OptionsModel::Init(bool resetSettings)
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
-        settings.setValue("strThirdPartyTxUrls", "https://explorer.czsdoge.org/tx/%s|https://openchains.info/coin/czsdoge/tx/DINGO/%s");
+        settings.setValue("strThirdPartyTxUrls", "https://explorer.broccolicoin.org/tx/%s|https://openchains.info/coin/broccolicoin/tx/BROCCOLI/%s");
     strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "").toString();
 
     if (!settings.contains("fCoinControlFeatures"))

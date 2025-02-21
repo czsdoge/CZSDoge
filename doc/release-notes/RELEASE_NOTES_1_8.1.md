@@ -1,7 +1,7 @@
-# CZSDoge Core 1.8.1
+# BroccoliCoin Core 1.8.1
 
-CZSDoge Core 1.8.1 is primarily a bugfix release, bringing CZSDoge Core in
-line with Bitcoin 0.9.3. CZSDoge Core 1.8.1 also adds in support for printing
+BroccoliCoin Core 1.8.1 is primarily a bugfix release, bringing BroccoliCoin Core in
+line with Bitcoin 0.9.3. BroccoliCoin Core 1.8.1 also adds in support for printing
 paper wallets, and disables connections to pre-1.8 clients. This is a RECOMMENDED
 upgrade due to the large number of bug fixes, but is not a required one.
 
@@ -15,13 +15,13 @@ computer that's disconnected from the Internet. While the wallet generator
 does not save the keys it generates, this ensures there is no risk of a virus
 or similar capturing the key from memory or interfering with its generation.
 
-## CZSDoge Core Release Notes
+## BroccoliCoin Core Release Notes
 
 * Translation improvements and corrections
-* Disable Transifex based translation process (not used by CZSDoge Core)
+* Disable Transifex based translation process (not used by BroccoliCoin Core)
 * Add checkpoints around AuxPoW switchover block (371,337)
-* Disable connections from pre-1.8 CZSDoge Core clients
-* Use HTTPS with explorer.czsdoge.org
+* Disable connections from pre-1.8 BroccoliCoin Core clients
+* Use HTTPS with explorer.broccolicoin.org
 * Remove unreachable code introduced with AuxPoW support
 * "blocknotify" option now supports %i as a format parameter, which is replaced by block height
 * New option "maxoutconnections" to set the maximum number of outbound peer connections. Defaults to 8, minimum is 2, maximum is whatever "maxconnections" is set to (default 125).
@@ -40,20 +40,20 @@ below:
 
 ## Known Issues
 
-There is a known issue with quantities in JSON used by the RPC interface (https://github.com/czsdoge/czsdoge/issues/134).
+There is a known issue with quantities in JSON used by the RPC interface (https://github.com/broccolicoin/broccolicoin/issues/134).
 This stems from the use of a floating point precision number to hold fixed precision data.
 Currently looking at solutions, which primarily either involve JSON which is not compliant
 to the specification, or making the RPC layer slightly incompatible with the conventional
 Bitcoin API.
 
-This only affects values significantly below 1 Dingo, however merchants may wish to round to
-the nearest Dingo on all transactions for now.
+This only affects values significantly below 1 Broccoli, however merchants may wish to round to
+the nearest Broccoli on all transactions for now.
 
 ## Credits
 
 Listed in strictly alphabetical order, using name listed in Github. This
 includes those whose contributions to Bitcoin Core have been merged
-into CZSDoge Core:
+into BroccoliCoin Core:
 
 * Abderraouf Adjal
 * Andymeows

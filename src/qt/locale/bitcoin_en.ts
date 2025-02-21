@@ -80,12 +80,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your CZSDoge addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your BroccoliCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your CZSDoge addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your BroccoliCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -211,7 +211,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CZSDOGES&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BROCCOLICOINS&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -227,7 +227,7 @@
     </message>
     <message>
         <location line="-56"/>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your czsdoges from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your broccolicoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -297,7 +297,7 @@
     </message>
 </context>
 <context>
-    <name>CZSDogeGUI</name>
+    <name>BroccoliCoinGUI</name>
     <message>
         <location filename="../bitcoingui.cpp" line="+135"/>
         <source>Wallet</source>
@@ -325,7 +325,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Send coins to a CZSDoge address</source>
+        <source>Send coins to a BroccoliCoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -335,7 +335,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Request payments (generates QR codes and czsdoge: URIs)</source>
+        <source>Request payments (generates QR codes and broccolicoin: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -435,18 +435,18 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Sign messages with your CZSDoge addresses to prove you own them</source>
-        <translation type="unfinished">Sign messages with your CZSDoge addresses to prove you own them</translation>
+        <source>Sign messages with your BroccoliCoin addresses to prove you own them</source>
+        <translation type="unfinished">Sign messages with your BroccoliCoin addresses to prove you own them</translation>
     </message>
     <message>
         <location line="-510"/>
-        <source>Send coins to a CZSDoge address</source>
-        <translation>Send coins to a CZSDoge address</translation>
+        <source>Send coins to a BroccoliCoin address</source>
+        <translation>Send coins to a BroccoliCoin address</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Verify messages to ensure they were signed with specified CZSDoge addresses</source>
-        <translation type="unfinished">Verify messages to ensure they were signed with specified CZSDoge addresses</translation>
+        <source>Verify messages to ensure they were signed with specified BroccoliCoin addresses</source>
+        <translation type="unfinished">Verify messages to ensure they were signed with specified BroccoliCoin addresses</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -470,8 +470,8 @@
     </message>
     <message>
         <location line="+516"/>
-        <source>CZSDoge</source>
-        <translation>CZSDoge</translation>
+        <source>BroccoliCoin</source>
+        <translation>BroccoliCoin</translation>
     </message>
     <message>
         <location line="-741"/>
@@ -495,7 +495,7 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Open a czsdoge: URI or payment request</source>
+        <source>Open a broccolicoin: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -505,7 +505,7 @@
     </message>
     <message>
         <location line="+2"/>
-        <source>Show the %1 help message to get a list with possible CZSDoge command-line options</source>
+        <source>Show the %1 help message to get a list with possible BroccoliCoin command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -535,10 +535,10 @@
     </message>
     <message numerus="yes">
         <location line="+155"/>
-        <source>%n active connection(s) to CZSDoge network</source>
+        <source>%n active connection(s) to BroccoliCoin network</source>
         <translation type="unfinished">
-            <numerusform>%n active connection to CZSDoge network</numerusform>
-            <numerusform>%n active connections to CZSDoge network</numerusform>
+            <numerusform>%n active connection to BroccoliCoin network</numerusform>
+            <numerusform>%n active connections to BroccoliCoin network</numerusform>
         </translation>
     </message>
     <message>
@@ -563,10 +563,10 @@
     </message>
     <message numerus="yes">
         <location line="+356"/>
-        <source>%n active connection(s) to CZSDoge network</source>
+        <source>%n active connection(s) to BroccoliCoin network</source>
         <translation>
-            <numerusform>%n active connection to CZSDoge network</numerusform>
-            <numerusform>%n active connections to CZSDoge network</numerusform>
+            <numerusform>%n active connection to BroccoliCoin network</numerusform>
+            <numerusform>%n active connections to BroccoliCoin network</numerusform>
         </translation>
     </message>
     <message>
@@ -624,8 +624,8 @@
     </message>
     <message>
         <location line="+13"/>
-        <source>CZSDoge</source>
-        <translation type="unfinished">CZSDoge</translation>
+        <source>BroccoliCoin</source>
+        <translation type="unfinished">BroccoliCoin</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -649,7 +649,7 @@
     </message>
     <message>
         <location line="-440"/>
-        <source>Show the %1 help message to get a list with possible CZSDoge command-line options</source>
+        <source>Show the %1 help message to get a list with possible BroccoliCoin command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -729,7 +729,7 @@
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+520"/>
-        <source>A fatal error occurred. CZSDoge can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. BroccoliCoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -972,7 +972,7 @@
     </message>
     <message>
         <location line="+71"/>
-        <source>The entered address &quot;%1&quot; is not a valid CZSDoge address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid BroccoliCoin address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1107,7 +1107,7 @@
     </message>
     <message>
         <location line="+10"/>
-        <source>%1 will download and store a copy of the CZSDoge block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>%1 will download and store a copy of the BroccoliCoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1156,12 +1156,12 @@
     </message>
     <message>
         <location line="+119"/>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the czsdoge network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the broccolicoin network, as detailed below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
-        <source>Attempting to spend czsdoges that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend broccolicoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1362,7 +1362,7 @@
     </message>
     <message>
         <location line="+30"/>
-        <source>Automatically open the CZSDoge client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the BroccoliCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1372,7 +1372,7 @@
     </message>
     <message>
         <location line="+17"/>
-        <source>Connect to the CZSDoge network through a SOCKS5 proxy.</source>
+        <source>Connect to the BroccoliCoin network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1427,7 +1427,7 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>Connect to the CZSDoge network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <source>Connect to the BroccoliCoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1552,7 +1552,7 @@
     <message>
         <location line="+62"/>
         <location line="+405"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CZSDoge network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BroccoliCoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1764,7 +1764,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+0"/>
-        <source>The paper wallet printing process has begun.&lt;br/&gt;Please wait for the wallets to print completely and verify that everything printed correctly.&lt;br/&gt;Check for misalignments, ink bleeding, smears, or anything else that could make the private keys unreadable.&lt;br/&gt;Now, enter the number of DINGO you wish to send to each wallet:</source>
+        <source>The paper wallet printing process has begun.&lt;br/&gt;Please wait for the wallets to print completely and verify that everything printed correctly.&lt;br/&gt;Check for misalignments, ink bleeding, smears, or anything else that could make the private keys unreadable.&lt;br/&gt;Now, enter the number of BROCCOLI you wish to send to each wallet:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1863,7 +1863,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="-402"/>
-        <source>Cannot start czsdoge: click-to-pay handler</source>
+        <source>Cannot start broccolicoin: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1885,7 +1885,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+8"/>
-        <source>URI cannot be parsed! This can be caused by an invalid CZSDoge address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid BroccoliCoin address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2007,7 +2007,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+128"/>
-        <source>Enter a CZSDoge address (e.g. %1)</source>
+        <source>Enter a BroccoliCoin address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2593,7 +2593,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="+14"/>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the CZSDoge network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BroccoliCoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2937,7 +2937,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="+535"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for czsdoge transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for broccolicoin transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3101,7 +3101,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+102"/>
-        <source>Warning: Invalid CZSDoge address</source>
+        <source>Warning: Invalid BroccoliCoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3156,7 +3156,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+39"/>
-        <source>The CZSDoge address to send the payment to</source>
+        <source>The BroccoliCoin address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3183,7 +3183,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="-1021"/>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less czsdoges than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less broccolicoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3213,7 +3213,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+47"/>
-        <source>A message that was attached to the czsdoge: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the CZSDoge network.</source>
+        <source>A message that was attached to the broccolicoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the BroccoliCoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3270,12 +3270,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+6"/>
-        <source>You can sign messages/agreements with your addresses to prove you can receive czsdoges sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive broccolicoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The CZSDoge address to sign the message with</source>
+        <source>The BroccoliCoin address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3317,7 +3317,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this CZSDoge address</source>
+        <source>Sign the message to prove you own this BroccoliCoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3348,12 +3348,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+21"/>
-        <source>The CZSDoge address the message was signed with</source>
+        <source>The BroccoliCoin address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified CZSDoge address</source>
+        <source>Verify the message to ensure it was signed with the specified BroccoliCoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4119,8 +4119,8 @@ p, li { white-space: pre-wrap; }
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+12"/>
-        <source>CZSDoge Core</source>
-        <translation type="unfinished">CZSDoge Core</translation>
+        <source>BroccoliCoin Core</source>
+        <translation type="unfinished">BroccoliCoin Core</translation>
     </message>
     <message>
         <location line="+1"/>

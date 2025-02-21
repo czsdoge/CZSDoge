@@ -16,7 +16,7 @@ OpenURIDialog::OpenURIDialog(QWidget *parent) :
 {
     ui->setupUi(this);
 #if QT_VERSION >= 0x040700
-    ui->uriEdit->setPlaceholderText("czsdoge:");
+    ui->uriEdit->setPlaceholderText("broccolicoin:");
 #endif
 }
 
@@ -48,5 +48,5 @@ void OpenURIDialog::on_selectFileButton_clicked()
     if(filename.isEmpty())
         return;
     QUrl fileUri = QUrl::fromLocalFile(filename);
-    ui->uriEdit->setText("czsdoge:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
+    ui->uriEdit->setText("broccolicoin:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
 }

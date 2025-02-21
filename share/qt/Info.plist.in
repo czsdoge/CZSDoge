@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>CZSDoge-Qt</string>
+  <string>BroccoliCoin-Qt</string>
   
   <key>CFBundleName</key>
-  <string>CZSDoge-Qt</string>
+  <string>BroccoliCoin-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>com.czsdoge.CZSDoge-Qt</string>
+  <string>com.broccolicoin.BroccoliCoin-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>com.czsdoge.CZSDogePayment</string>
+      <string>com.broccolicoin.BroccoliCoinPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>czsdoge</string>
+        <string>broccolicoin</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>com.czsdoge.paymentrequest</string>
+      <string>com.broccolicoin.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>CZSDoge payment request</string>
+      <string>BroccoliCoin payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/czsdoge-paymentrequest</string>
+        <string>application/broccolicoin-paymentrequest</string>
         <key>public.filename-extension</key>
         <array>
-          <string>czsdogepaymentrequest</string>
+          <string>broccolicoinpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>com.czsdoge.paymentrequest</string>
+        <string>com.broccolicoin.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

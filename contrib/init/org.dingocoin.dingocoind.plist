@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>org.czsdoge.czsdoged</string>
+	<string>org.broccolicoin.broccolicoind</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/czsdoged</string>
+		<string>/usr/local/bin/broccolicoind</string>
 		<string>-daemon</string>
 	</array>
 	<key>RunAtLoad</key>

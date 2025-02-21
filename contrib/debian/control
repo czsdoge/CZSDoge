@@ -1,4 +1,4 @@
-Source: czsdoge
+Source: broccolicoin
 Section: utils
 Priority: optional
 Maintainer: Matt Corallo <matt@mattcorallo.com>
@@ -26,15 +26,15 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: http://www.czsdoge.org/
-Vcs-Git: git://github.com/czsdoge/czsdoge.git
-Vcs-Browser: http://github.com/czsdoge/czsdoge
+Homepage: http://www.broccolicoin.org/
+Vcs-Git: git://github.com/broccolicoin/broccolicoin.git
+Vcs-Browser: http://github.com/broccolicoin/broccolicoin
 
-Package: czsdoged
+Package: broccolicoind
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- CZSDoge is a free open source peer-to-peer electronic cash system that
+ BroccoliCoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -43,31 +43,31 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 20+ GB of space, slowly growing.
  .
- This package provides the daemon, czsdoged, and the CLI tool
- czsdoge-cli to interact with the daemon.
+ This package provides the daemon, broccolicoind, and the CLI tool
+ broccolicoin-cli to interact with the daemon.
 
-Package: czsdoge-qt
+Package: broccolicoin-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- CZSDoge is a free open source peer-to-peer electronic cash system that
+ BroccoliCoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides CZSDoge-Qt, a GUI for CZSDoge based on Qt.
+ This package provides BroccoliCoin-Qt, a GUI for BroccoliCoin based on Qt.
 
-Package: czsdoge-tx
+Package: broccolicoin-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
- CZSDoge is a free open source peer-to-peer electronic cash system that
+ BroccoliCoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides czsdoge-tx, a command-line transaction creation
- tool which can be used without a czsdoge daemon.  Some means of
+ This package provides broccolicoin-tx, a command-line transaction creation
+ tool which can be used without a broccolicoin daemon.  Some means of
  exchanging minimal transaction data with peers is still required.

@@ -103,8 +103,8 @@ namespace boost {
 
 using namespace std;
 
-const char * const BITCOIN_CONF_FILENAME = "czsdoge.conf";
-const char * const BITCOIN_PID_FILENAME = "czsdoged.pid";
+const char * const BITCOIN_CONF_FILENAME = "broccolicoin.conf";
+const char * const BITCOIN_PID_FILENAME = "broccolicoind.pid";
 
 CCriticalSection cs_args;
 map<string, string> mapArgs;
@@ -462,7 +462,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "czsdoge";
+    const char* pszModule = "broccolicoin";
 #endif
     if (pex)
         return strprintf(
@@ -488,7 +488,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "CZSDoge";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "BroccoliCoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -498,10 +498,10 @@ boost::filesystem::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/CZSDoge";
+    return pathRet / "Library/Application Support/BroccoliCoin";
 #else
     // Unix
-    return pathRet / ".czsdoge";
+    return pathRet / ".broccolicoin";
 #endif
 #endif
 }

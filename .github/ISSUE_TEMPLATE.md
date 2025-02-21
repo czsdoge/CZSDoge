@@ -1,8 +1,8 @@
 <!--- Remove sections that do not apply -->
 
-This issue tracker is only for technical issues related to CZSDoge Core.
+This issue tracker is only for technical issues related to BroccoliCoin Core.
 
-For general questions about CZSDoge please use one of the various communities, e.g. Reddit, IRC, Discord, etc.
+For general questions about BroccoliCoin please use one of the various communities, e.g. Reddit, IRC, Discord, etc.
 
 ### Describe the issue
 
@@ -21,7 +21,7 @@ Tell us what happens instead
 ### Screenshots.
 If the issue is related to the GUI, screenshots can be added to this issue via drag & drop.
 
-### What version of CZSDoge Core are you using?
+### What version of BroccoliCoin Core are you using?
 List the version number/commit ID, and if it is an official binary, self compiled or a distribution package such as PPA.
 
 ### Machine specs:

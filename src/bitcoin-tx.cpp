@@ -54,10 +54,10 @@ static int AppInitRawTx(int argc, char* argv[])
     if (argc<2 || IsArgSet("-?") || IsArgSet("-h") || IsArgSet("-help"))
     {
         // First part of help message is specific to this utility
-        std::string strUsage = strprintf(_("%s czsdoge-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = strprintf(_("%s broccolicoin-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  czsdoge-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded czsdoge transaction") + "\n" +
-              "  czsdoge-tx [options] -create [commands]   " + _("Create hex-encoded czsdoge transaction") + "\n" +
+              "  broccolicoin-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded broccolicoin transaction") + "\n" +
+              "  broccolicoin-tx [options] -create [commands]   " + _("Create hex-encoded broccolicoin transaction") + "\n" +
               "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());

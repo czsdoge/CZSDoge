@@ -65,6 +65,12 @@ To build executables for Windows 64-bit, install the following dependencies:
 
     sudo apt-get install g++-mingw-w64-x86-64 mingw-w64-x86-64-dev
 
+For Ubuntu 20.04, set the default mingw32 g++ compiler option to posix:
+
+    sudo update-alternatives --config x86_64-w64-mingw32-g++
+
+...Choose the "posix" (vs 'auto' or 'win32') option, and continue.
+
 Then build using:
 
     cd depends
@@ -80,6 +86,12 @@ To build executables for Windows 32-bit, install the following dependencies:
 
     sudo apt-get install g++-mingw-w64-i686 mingw-w64-i686-dev 
 
+Ensure that this toolchain can build for posix (else you may have compilation errors for Flincoin's dependencies):
+
+    sudo update-alternatives --config i686-w64-mingw32-g++
+
+Choose the posix option (instead of auto or win32), and continue. Then build using:
+    
 Then build using:
 
     cd depends

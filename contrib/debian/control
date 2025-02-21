@@ -26,7 +26,7 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: http://www.broccolicoin.org/
+Homepage: http://www.broccolicoin.net/
 Vcs-Git: git://github.com/broccolicoin/broccolicoin.git
 Vcs-Browser: http://github.com/broccolicoin/broccolicoin
 

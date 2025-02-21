@@ -49,7 +49,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "BroccoliCoin"
-#define QAPP_ORG_DOMAIN "broccolicoin.org"
+#define QAPP_ORG_DOMAIN "broccolicoin.net"
 #define QAPP_APP_NAME_DEFAULT "BroccoliCoin-Qt"
 #define QAPP_APP_NAME_TESTNET "BroccoliCoin-Qt-testnet"
 

@@ -1,13 +1,13 @@
 # BroccoliCoin Core [BROCCOLICOIN, Ȼ]
 
-![BroccoliCoin](https://BroccoliCoin.org/img/logos/BroccoliCoin/logo/broccolicoin_coin256.png)
+![BroccoliCoin](https://broccolicoin.net/img/logos/BroccoliCoin/logo/broccolicoin_coin256.png)
 
 [![Build Status](https://travis-ci.com/BroccoliCoin/BroccoliCoin.svg?branch=master)](https://travis-ci.com/BroccoliCoin/BroccoliCoin)
 
 BroccoliCoin is a cryptocurrency like Bitcoin, although it does not use SHA256 as
 its proof of work (POW). Taking development cues from Tenebrix and Litecoin,
 BroccoliCoin currently employs a simplified variant of scrypt.
-- **Website:** [BroccoliCoin.org](https://BroccoliCoin.org)
+- **Website:** [broccolicoin.net](https://broccolicoin.net)
 
 ## License – Much license ⚖️
 BroccoliCoin Core is released under the terms of the MIT license. See

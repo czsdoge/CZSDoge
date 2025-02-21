@@ -510,7 +510,7 @@ std::string HelpMessage(HelpMessageMode mode)
 std::string LicenseInfo()
 {
     const std::string URL_SOURCE_CODE = "<https://github.com/broccolicoin/broccolicoin>";
-    const std::string URL_WEBSITE = "<https://broccolicoin.org>";
+    const std::string URL_WEBSITE = "<https://broccolicoin.net>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2013, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +

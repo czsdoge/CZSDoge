@@ -165,13 +165,13 @@ public:
         pchMessageStart[1] = 0xc1;
         pchMessageStart[2] = 0xc1;
         pchMessageStart[3] = 0xc1;
-        nDefaultPort = 33117;
+        nDefaultPort = 53117;
         nPruneAfterHeight = 100000;
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("seed1.broccolicoin.org", "seed1.broccolicoin.org", true));
-        vSeeds.push_back(CDNSSeedData("seed2.broccolicoin.org", "seed2.broccolicoin.org", true));
-        vSeeds.push_back(CDNSSeedData("seed3.broccolicoin.org", "seed3.broccolicoin.org", true));
+        vSeeds.push_back(CDNSSeedData("seed1.broccolicoin.net", "seed1.broccolicoin.net", true));
+        vSeeds.push_back(CDNSSeedData("seed2.broccolicoin.net", "seed2.broccolicoin.net", true));
+        vSeeds.push_back(CDNSSeedData("seed3.broccolicoin.net", "seed3.broccolicoin.net", true));
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,30);
@@ -328,7 +328,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.push_back(CDNSSeedData("tn-seed.broccolicoin.org", "tn-seed.broccolicoin.org", true));
+        vSeeds.push_back(CDNSSeedData("tn-seed.broccolicoin.net", "tn-seed.broccolicoin.net", true));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,113); // 0x71
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196); // 0xc4
